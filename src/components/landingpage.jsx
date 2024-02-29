@@ -9,13 +9,15 @@ const Landingpage = () => {
     }
 
     return (
-        <section>
+        <section id='top'>
             <div className="bg-sky-300 dark:bg-violet-400">
                 <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 dark:text-gray-900">
                     <h1 className="text-5xl font-bold leadi sm:text-6xl xl:max-w-3xl dark:text-gray-900" style={{
                         fontFamily: "PROGRESS PERSONAL USE"
                     }}>Innovating Across Horizons</h1>
-                    <p className="mt-6 mb-8 text-3xl sm:mb-12 xl:max-w-3xl dark:text-gray-900 italic ">Explore my Skills and Preferences</p>
+                    <p className="mt-6 mb-8 text-3xl sm:mb-12 xl:max-w-3xl dark:text-gray-900 italic " style={{
+                        fontFamily:"PROGRESS PERSONAL USE"
+                    }}>Explore My Skills and Preferences</p>
                     <div className="flex flex-wrap justify-center">
                         <button onClick={scrollToTarget} type="button" className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-gray-800 dark:text-gray-50 border border-black">Get started</button>
                     </div>

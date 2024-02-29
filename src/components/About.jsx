@@ -1,6 +1,8 @@
 import React from 'react'
 import FOTO from '../assets/foto.png'
 import { Link } from 'react-router-dom'
+import { GoMoveToTop } from "react-icons/go";
+import { scrollToTops } from '../utils/func';
 
 const About = () => {
 
@@ -12,7 +14,8 @@ const About = () => {
     return (
         <>
             <br id='target' />
-            <section className="py-6 dark:bg-gray-800 dark:text-gray-100">
+            <section className="py-6 dark:bg-gray-800 dark:text-gray-100 relative">
+                
                 <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
                     <h1 className="text-4xl font-bold leadi text-center sm:text-5xl">Hi There!</h1>
                     <p className="max-w-2xl dark:text-gray-400 text-justify">Hello! I am Malik Abdurrasyid, a graduate in Electrical Engineering - Telecommunications with a special interest in video editing, information security, quantum software development, and user interface development using React</p>
