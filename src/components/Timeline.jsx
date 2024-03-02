@@ -87,9 +87,9 @@ const Timeline = () => {
                                             <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                                             <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                                         </svg>
-                                        <h4 className="font-medium">Quis velit quae similique maxime optio temporibus</h4>
+                                        <h4 className="font-bold">Belajar Dasar Git dengan Github</h4>
+                                        <a href='https://www.dicoding.com/certificates/72ZDORJ5LXYW' className='text-violet-500 hover:text-violet-300'>See Certificate</a>
                                     </div>
-                                    <p className="ml-7 dark:text-gray-400">Illum hic placeat unde porro, cupiditate nesciunt? Numquam debitis eligendi aspernatur mum.</p>
                                 </li>
                                 <li className="space-y-1">
                                     <div className="flex items-center space-x-2">
@@ -97,9 +97,72 @@ const Timeline = () => {
                                             <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                                             <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                                         </svg>
-                                        <h4 className="font-medium">Quis velit quae similique maxime optio temporibus</h4>
+                                        <h4 className="font-bold">Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h4>
+                                        <a href='https://www.dicoding.com/certificates/QLZ9KOVQ9Z5D' className='text-violet-500 hover:text-violet-300'>See Certificate</a>
                                     </div>
-                                    <p className="ml-7 dark:text-gray-400">Illum hic placeat unde porro, cupiditate nesciunt? Numquam debitis eligendi aspernatur mum.</p>
+                                </li>
+                                <li className="space-y-1">
+                                    <div className="flex items-center space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 fill-current dark:text-violet-400">
+                                            <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                                            <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                                        </svg>
+                                        <h4 className="font-bold">Belajar Dasar Pemrograman Web</h4>
+                                        <a href='https://www.dicoding.com/certificates/1RXYMVRVKXVM' className='text-violet-500 hover:text-violet-300'>See Certificate</a>
+                                    </div>
+                                </li>
+                                <li className="space-y-1">
+                                    <div className="flex items-center space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 fill-current dark:text-violet-400">
+                                            <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                                            <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                                        </svg>
+                                        <h4 className="font-bold">Belajar Membuat Aplikasi Back-End untuk Pemula
+                                        </h4>
+                                        <a href='https://www.dicoding.com/certificates/QLZ9K9VK7Z5D' className='text-violet-500 hover:text-violet-300'>See Certificate</a>
+                                    </div>
+                                </li>
+                                <li className="space-y-1">
+                                    <div className="flex items-center space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 fill-current dark:text-violet-400">
+                                            <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                                            <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                                        </svg>
+                                        <h4 className="font-bold">Belajar Dasar Pemrograman JavaScript
+                                        </h4>
+                                        <a href='https://www.dicoding.com/certificates/EYX42VW26ZDL' className='text-violet-500 hover:text-violet-300'>See Certificate</a>
+                                    </div>
+                                </li>
+                                <li className="space-y-1">
+                                    <div className="flex items-center space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 fill-current dark:text-violet-400">
+                                            <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                                            <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                                        </svg>
+                                        <h4 className="font-bold">Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)</h4>
+                                        <a href='https://www.dicoding.com/certificates/07Z6RY6NMPQR' className='text-violet-500 hover:text-violet-300'>See Certificate</a>
+                                    </div>
+                                </li>
+                                <li className="space-y-1">
+                                    <div className="flex items-center space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 fill-current dark:text-violet-400">
+                                            <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                                            <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                                        </svg>
+                                        <h4 className="font-bold">Belajar Membuat Front-End Web untuk Pemula
+                                        </h4>
+                                        <a href='https://www.dicoding.com/certificates/1RXYO4MM1PVM' className='text-violet-500 hover:text-violet-300'>See Certificate</a>
+                                    </div>
+                                </li>
+                                <li className="space-y-1">
+                                    <div className="flex items-center space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 fill-current dark:text-violet-400">
+                                            <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                                            <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                                        </svg>
+                                        <h4 className="font-bold">Belajar Dasar-Dasar DevOps</h4>
+                                        <a href='https://www.dicoding.com/certificates/2VX3YRG34PYQ' className='text-violet-500 hover:text-violet-300'>See Certificate</a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -129,7 +192,7 @@ const Timeline = () => {
                     </div>
                 </div>
             </section>
-        </section>
+        </section >
     )
 }
 

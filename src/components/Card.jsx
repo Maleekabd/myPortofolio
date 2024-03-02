@@ -27,25 +27,25 @@ const skills = [
 const Card = () => {
     return (
         <>
-            <br id='myskills'/>
+            <br id='myskills' />
             <br />
             <br />
             <section>
                 <h1 className='text-4xl p-3 m-3 italic underline' style={{
                     fontFamily: "PROGRESS PERSONAL USE"
                 }}>My Skills</h1>
-                <div className="min-[320px]:grid min-[320px]:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 m-3 p-3 gap-4 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
+                <div className="min-[320px]:grid min-[320px]:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 m-3 p-3 gap-4 rounded-md dark:bg-gray-900 dark:text-gray-100">
                     {skills.map(skill =>
                     (
-                        <div className='flex flex-wrap border border-gray-100'>
+                        <div className='flex flex-wrap border rounded-md'>
                             <img src={skill.image} alt={skill.title} className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
                             <div className="flex flex-col justify-between p-6 space-y-8">
                                 <div className="space-y-2">
-                                    <h2 className="text-3xl font-semibold tracki">{skill.title}</h2>
-                                    <p className="dark:text-gray-100">{skill.description}</p>
+                                    <h2 className="text-3xl font-semibold tracking-normal">{skill.title}</h2>
+                                    <p className="dark:text-gray-100 text-justify">{skill.description}</p>
                                 </div>
                                 <Link to={`${skill.path}`}>
-                                    <button type="button" className="border border-black flex items-center justify-center w-full p-3 font-semibold tracki rounded-md dark:bg-violet-400 dark:text-gray-900">See more</button>
+                                    <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracki rounded-md dark:bg-violet-400 dark:text-gray-900 bg-violet-400 hover:bg-violet-200">See more</button>
                                 </Link>
                             </div>
                         </div>
