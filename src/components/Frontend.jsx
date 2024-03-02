@@ -1,3 +1,5 @@
+import BackButton from "../elements/BackButton"
+
 const FrontendProjects = [
     {
         id: 1,
@@ -41,9 +43,10 @@ const FrontendProjects = [
 const Frontend = () => {
     return (
         <section>
-            <div className="grid grid-cols-5 gap-3 m-2 p-2 dark:bg-gray-900 dark:text-gray-100">
+            <BackButton />
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 m-2 p-2 dark:bg-gray-900 dark:text-gray-100">
                 {FrontendProjects.map(skill => (
-                    <div key={skill.id} className="border relative h-96">
+                    <div key={skill.id} className="border rounded-md relative h-96">
                         <img src="https://source.unsplash.com/random/300x300/?2" alt={skill.title} className="object-cover object-center w-full rounded-t-md h-60 dark:bg-gray-500" />
                         <div className="flex flex-col justify-between p-3 space-y-8">
                             <div className="space-y-2">
@@ -56,7 +59,7 @@ const Frontend = () => {
                 ))
                 }
             </div>
-        </section>
+        </section >
     )
 }
 

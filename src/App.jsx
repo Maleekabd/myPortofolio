@@ -33,12 +33,8 @@ function App() {
                 } />
                 <Route path='/about' element={
                     <>
-                        <header className='sticky top-0'>
-                            <Navbar />
-                        </header>
                         <main>
                             <AboutMeSpec />
-                            <Contact />
                         </main>
                         <footer>
                             <Footer />
@@ -52,9 +48,6 @@ function App() {
                 } />
                 <Route path='/frontend-react-projects' element={
                     <>
-                        <header>
-                            <Navbar />
-                        </header>
                         <main>
                             <Frontend />
                         </main>

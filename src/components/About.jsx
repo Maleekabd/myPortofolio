@@ -1,8 +1,7 @@
 import React from 'react'
 import FOTO from '../assets/foto.png'
 import { Link } from 'react-router-dom'
-import { GoMoveToTop } from "react-icons/go";
-import { scrollToTops } from '../utils/func';
+import BackButton from '../elements/BackButton';
 
 const About = () => {
 
@@ -40,7 +39,8 @@ export const AboutMeSpec = () => {
     return (
         <>
             <br id='aboutme' />
-            <section className="py-6 dark:bg-gray-800 dark:text-gray-100">
+            <section className=" dark:bg-gray-800 dark:text-gray-100">
+                <BackButton />
                 <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
                     <h1 className="text-4xl font-bold text-center sm:text-5xl">About Me</h1>
                     <p className="max-w-2xl text-justify dark:text-gray-400">Hello! I am Malik Abdurrasyid, a graduate in Electrical Engineering - Telecommunications with a special interest in video editing, information security, quantum software development, and user interface development using React. I enjoy reading books on various topics and exploring new technologies. With a passion for continuous learning and self-improvement, I am ready to make a meaningful contribution to the world of technology.</p>
