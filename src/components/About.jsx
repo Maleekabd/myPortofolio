@@ -23,7 +23,7 @@ const About = () => {
                             <p className="text-xl font-semibold">Malik Abdurrasyid</p>
                             <p className="dark:text-gray-400">Fresh Graduate Telecommunication Engineering</p>
                             <Link to={`/about`}>
-                                <button onClick={scrollToTop} className='m-2 p-2 border rounded-md shadow-sm w-full'>See more</button>
+                                <button onClick={scrollToTop} className='hover:bg-violet-200 bg-violet-400 m-2 p-2 rounded-md shadow-sm w-full'>See more</button>
                             </Link>
                         </div>
                     </div>

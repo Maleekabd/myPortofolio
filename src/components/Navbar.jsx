@@ -35,16 +35,18 @@ const Navbar = () => {
                         <button onClick={scrollToAbout} className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-violet-400 dark:border-violet-400">About</button>
                     </li>
                 </ul>
-                <img src={LOGO} alt='logo' />
+                <div className="flex items-center">
+                    <img src={LOGO} alt='logo' className='h-10 w-20' />
+                </div>
                 <ul className="items-stretch hidden space-x-3 md:flex">
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"><FaInstagram /></a>
+                        <a rel="noopener noreferrer" href="https://www.instagram.com/__malikabd" target='_blank' className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"><FaInstagram /></a>
                     </li>
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"><FaLinkedinIn /></a>
+                        <a rel="noopener noreferrer" href="https://www.linkedin.com/in/malik-abdurrasyid" target='_blank' className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"><FaLinkedinIn /></a>
                     </li>
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"><SiGmail /></a>
+                        <a rel="noopener noreferrer" href="https://mail.google.com/mail/u/0/#inbox?compose=new" target='_blank' className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"><SiGmail /></a>
                     </li>
                 </ul>
                 <button title="Button" type="button" className="p-4 md:hidden">
