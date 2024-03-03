@@ -16,7 +16,7 @@ const About = () => {
             <section className="z-0 py-6 dark:bg-gray-800 dark:text-gray-100">
                 <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
                     <h1 className="text-4xl font-bold leadi text-center sm:text-5xl">Hi There!</h1>
-                    <p className="max-w-2xl dark:text-gray-400 text-justify">Hello! I am Malik Abdurrasyid, a graduate in Electrical Engineering - Telecommunications with a special interest in video editing, information security, quantum software development, and user interface development using React</p>
+                    <p className="max-w-2xl dark:text-gray-400 text-justify">Hello! I am Malik Abdurrasyid, a graduate in Electrical Engineering - Telecommunications with a special interest in video editing using After Effect and Capcut PC, Computer Network, quantum software development, and Frontend Web using React</p>
                     <div className="flex flex-row flex-wrap-reverse justify-center">
                         <div className="flex flex-col justify-center m-8 text-center">
                             <img alt="" className="self-center flex-shrink-0 w-36 h-36 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={FOTO} />
