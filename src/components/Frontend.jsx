@@ -7,13 +7,14 @@ import MusicSpot from '../assets/skill_img/musicspot.jpeg'
 import Login from '../assets/skill_img/Login.jpeg'
 import Markdown from '../assets/skill_img/Markdown.jpeg'
 import WebApp from '../assets/skill_img/webapp.png'
+import Portof from '../assets/skill_img/portof.png'
 
 const FrontendProjects = [
     {
         id: 1,
         title: "ShopBayy : E-Commerce",
         image: ShopBayy,
-        Path: "https://shopbayy.vercel.app/"
+        Path: "https://shopbayy.netlify.app/"
     },
     {
         id: 2,
@@ -50,7 +51,10 @@ const FrontendProjects = [
         Path: ""
     }, {
         id: 8,
-        title: "Web Portofolio"
+        title: "Web Portofolio",
+        image: Portof,
+        Path: "https://malikabdurrasyid.vercel.app/"
+
     },
     {
         id: 9,
