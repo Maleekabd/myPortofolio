@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
@@ -7,7 +7,23 @@ import { Link } from 'react-router-dom';
 import { IoLogoTiktok } from "react-icons/io5";
 
 
+
 const Navbar = () => {
+
+    const [prevScroll, setPrevScroll] = useState(0);
+    const [visible, setVisible] = useState(true)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScroll = window.scrollY;
+            setVisible(prevScroll > currentScroll || currentScroll === 0);
+            setPrevScroll(currentScroll);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [prevScroll])
 
     const scrollToTimeline = (e) => {
         const target = document.getElementById('timeline');
@@ -25,7 +41,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="z-50 p-4 dark:bg-gray-800 dark:text-gray-100">
+        <div id='header' className={visible ? `Visible z-50 p-4 dark:bg-gray-800 dark:text-gray-100` : `Hidden`}>
             <div className="container flex justify-between h-16 mx-auto md:justify-center md:space-x-8">
                 <ul className="items-stretch hidden space-x-3 md:flex">
                     <li className="flex">

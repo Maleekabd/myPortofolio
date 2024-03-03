@@ -16,7 +16,7 @@ function App() {
             <Routes>
                 <Route path='/' element={
                     <>
-                        <header className='sticky top-0'>
+                        <header>
                             <Navbar />
                         </header>
                         <main>

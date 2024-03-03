@@ -1,0 +1,21 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    /* Adjust height as needed */
+    /* Example background color */
+    transition: transform 0.1s ease;
+    /* Smooth transition for transform property */
+}
+
+.Visible {
+    transform: translateY(0);
+    /* Slide down animation when header is visible */
+}
+
+.Hidden {
+    transform: translateY(-200px);
+    /* Slide up animation when header is hidden */
+}
