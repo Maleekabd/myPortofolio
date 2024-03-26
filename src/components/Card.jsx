@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 
 const skills = [
     {
-        title: "Network Engineer",
-        description: "A Network Engineer is a professional in the field of information technology responsible for designing, implementing, and maintaining the computer network infrastructure of an organization.",
+        title: "Network Engineering",
+        description: "A Network Engineering is a professional in the field of information technology responsible for designing, implementing, and maintaining the computer network infrastructure of an organization.",
         image: computernetwork,
         path: "computer-network-projects"
     },
