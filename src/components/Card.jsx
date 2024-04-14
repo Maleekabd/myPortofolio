@@ -1,4 +1,3 @@
-import React from "react";
 import quantum from "../assets/skill/quantum.jpg";
 import reactjs from "../assets/skill/reactjs.jpg";
 import computernetwork from "../assets/skill/computernetwork.jpg";
@@ -44,34 +43,40 @@ const Card = () => {
         </h1>
         <div className="min-[320px]:grid min-[320px]:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 m-3 p-3 gap-4 rounded-md dark:bg-gray-900 dark:text-gray-100">
           {skills.map((skill) => (
-            <div
-              key={skill.title}
-              className="flex flex-wrap border rounded-md hover:scale-105 hover:-translate-y-6"
-            >
-              <img
-                src={skill.image}
-                alt={skill.title}
-                className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
-              />
-              <div className="flex flex-col justify-between p-6 space-y-8">
-                <div className="space-y-2">
-                  <h2 className="text-3xl font-semibold tracking-normal">
-                    {skill.title}
-                  </h2>
-                  <p className="dark:text-gray-100 text-justify">
-                    {skill.description}
-                  </p>
+            <>
+              <Link
+                to={`${skill.path}`}
+                key={skill.title}
+                className="flex flex-wrap border rounded-md hover:scale-[1.02] hover:-translate-y-6"
+                style={{
+                  transition: "all 0.2s ease",
+                }}
+              >
+                <div>
+                  <img
+                    src={skill.image}
+                    alt={skill.title}
+                    className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
+                  />
+                  <div className="flex flex-col justify-between p-6 space-y-8">
+                    <div className="space-y-2">
+                      <h2 className="text-3xl font-semibold tracking-normal">
+                        {skill.title}
+                      </h2>
+                      <p className="dark:text-gray-100 text-justify">
+                        {skill.description}
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      className="flex items-center justify-center w-full p-3 font-semibold tracki rounded-md dark:bg-violet-400 dark:text-gray-900 bg-violet-400 hover:bg-violet-200"
+                    >
+                      See more
+                    </button>
+                  </div>
                 </div>
-                <Link to={`${skill.path}`}>
-                  <button
-                    type="button"
-                    className="flex items-center justify-center w-full p-3 font-semibold tracki rounded-md dark:bg-violet-400 dark:text-gray-900 bg-violet-400 hover:bg-violet-200"
-                  >
-                    See more
-                  </button>
-                </Link>
-              </div>
-            </div>
+              </Link>
+            </>
           ))}
         </div>
       </section>

@@ -70,7 +70,7 @@ const Frontend = () => {
             <BackButton />
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 m-2 p-2 dark:bg-gray-900 dark:text-gray-100">
                 {FrontendProjects.map(skill => (
-                    <div key={skill.id} className="hover:-translate-y-5 border rounded-md relative h-96">
+                    <div key={skill.id} style={{transition:"all 0.2s ease"}} className="hover:scale-[1.02] border rounded-md relative h-96">
                         <img src={skill.image} alt={skill.title} className="object-cover object-center w-full rounded-t-md h-60 dark:bg-gray-500" />
                         <div className="flex flex-col justify-between p-3 space-y-8">
                             <div className="space-y-2">
