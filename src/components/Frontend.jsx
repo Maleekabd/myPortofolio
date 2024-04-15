@@ -20,7 +20,7 @@ const FrontendProjects = [
         id: 2,
         title: "MusicSpot : Explore your favorite music",
         image: MusicSpot,
-        Path: ""
+        Path: "https://new-music-spot.vercel.app"
     },
     {
         id: 3,
