@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className="container flex justify-between h-16 mx-auto md:justify-center md:space-x-8">
                 <ul className="items-stretch hidden space-x-3 md:flex">
                     <li className="flex">
-                        <Link to={'https://scytale-of-sparta-chi.vercel.app/'} target='_blank' className='hover:text-violet-400 flex items-center px-4 -mb-1 border-b-2 dark:border-transparent'>
+                        <Link to={'https://malteclabv2.netlify.app/'} target='_blank' className='hover:text-violet-400 flex items-center px-4 -mb-1 border-b-2 dark:border-transparent'>
                             <button className="">My Blog</button>
                         </Link>
                     </li>

@@ -10,7 +10,7 @@ const Footer = () => {
                         <Link className='hover:text-violet-400' to={'/about'}>About</Link>
                     </li>
                     <li>
-                        <Link className='hover:text-violet-400' to={'https://scytale-of-sparta-chi.vercel.app/'} target='_blank'>Blog</Link>
+                        <Link className='hover:text-violet-400' to={'https://malteclabv2.vercel.app/'} target='_blank'>Blog</Link>
                     </li>
                     <li>Contact</li>
                 </ul>
