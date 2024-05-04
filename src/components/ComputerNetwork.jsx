@@ -1,4 +1,3 @@
-import React from "react";
 import BackButton from "../elements/BackButton";
 import QAOA from "../assets/logoxx.png";
 import { Link } from "react-router-dom";

@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { materi } from "./ComputerNetwork";
+import { Link } from "react-router-dom";
 
 const ApaItuJaringanKomputer = () => {
-  const [getCurrentPath, setGetCurrentPath] = useState(false);
+  const [getCurrentPath, setGetCurrentPath] = useState(null);
 
   useEffect(() => {
     const getPath = location.pathname;
-    setGetCurrentPath(getPath.split('/')[2]);
+    setGetCurrentPath(getPath.split("/")[2]);
   }, []);
 
   return (
@@ -71,13 +72,20 @@ const ApaItuJaringanKomputer = () => {
           dan akses ke informasi di seluruh dunia.
         </p>
       </div>
-      <div className="p-5 w-4/12 ">
+      <div className="p-5 w-4/12 leading-7">
         <h1 className="text-center text-xl font-bold">Artikel Terkait</h1>
         {materi.map((konten) =>
-          getCurrentPath ===  konten.path ? (
-            <div className="text-violet-400 underline underline-offset-2">{konten.name}</div>
+          getCurrentPath === konten.path ? (
+            <Link
+              key={konten.id}
+              className="text-violet-400 underline underline-offset-2"
+            >
+              {konten.name}
+            </Link>
           ) : (
-            <div>{konten.name}</div>
+            <div className="hover:text-violet-400" key={konten.id}>
+              <Link to={'/computer-network-projects/' + konten.path}>{konten.name}</Link>
+            </div>
           )
         )}
       </div>
