@@ -47,7 +47,7 @@ const Card = () => {
               <Link
                 to={`${skill.path}`}
                 key={skill.title}
-                className="flex flex-wrap border rounded-md hover:scale-[1.02] hover:-translate-y-6"
+                className="flex flex-wrap border rounded-md hover:scale-105"
                 style={{
                   transition: "all 0.2s ease",
                 }}
@@ -58,7 +58,7 @@ const Card = () => {
                     alt={skill.title}
                     className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
                   />
-                  <div className="flex flex-col justify-between p-6 space-y-8">
+                  <div className="relative flex flex-col justify-between p-6 h-96">
                     <div className="space-y-2">
                       <h2 className="text-3xl font-semibold tracking-normal">
                         {skill.title}
@@ -69,8 +69,8 @@ const Card = () => {
                     </div>
                     <button
                       type="button"
-                      className="flex items-center justify-center w-full p-3 font-semibold tracki rounded-md dark:bg-violet-400 dark:text-gray-900 bg-violet-400 hover:bg-violet-200"
-                    >
+                      className="absolute bottom-0 left-0 flex items-center justify-center w-full p-3 font-semibold tracki rounded-md dark:bg-violet-400 dark:text-gray-900 bg-violet-400 hover:bg-violet-200"
+                    > 
                       See more
                     </button>
                   </div>
