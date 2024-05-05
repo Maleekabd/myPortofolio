@@ -42,11 +42,10 @@ const Card = () => {
           My Skills
         </h1>
         <div className="min-[320px]:grid min-[320px]:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 m-3 p-3 gap-4 rounded-md dark:bg-gray-900 dark:text-gray-100">
-          {skills.map((skill) => (
-            <>
+          {skills.map((skill, index) => (
               <Link
                 to={`${skill.path}`}
-                key={skill.title}
+                key={index}
                 className="flex flex-wrap border rounded-md hover:scale-105"
                 style={{
                   transition: "all 0.2s ease",
@@ -76,7 +75,6 @@ const Card = () => {
                   </div>
                 </div>
               </Link>
-            </>
           ))}
         </div>
       </section>
