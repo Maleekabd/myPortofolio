@@ -10,15 +10,6 @@ const Footer = () => {
               About
             </Link>
           </li>
-          <li>
-            <Link
-              className="hover:text-violet-400"
-              to={"https://malteclabv2.vercel.app/"}
-              target="_blank"
-            >
-              Blog
-            </Link>
-          </li>
           <li>Contact</li>
         </ul>
         <div className="flex flex-col justify-center pt-6 lg:pt-0">

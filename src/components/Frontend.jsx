@@ -29,26 +29,16 @@ const FrontendProjects = [
     Path: "https://login-page-malik.vercel.app/",
   },
   {
-    id: 4,
-    title: "Markdown Previewer",
-    image: Markdown,
-    Path: "",
-  },
-  {
     id: 5,
     title: "Quote Generator",
     image: QuoteGen,
     Path: "https://quote-generator-ten-psi.vercel.app/",
   },
   {
-    id: 6,
-    title: "Web Laboratory Multimedia Communication B-304",
-  },
-  {
     id: 7,
     title: "Vegetable Box : Get Fresh Vegetable from local farmer",
     image: VegetableBox,
-    Path: "",
+  Path: "",
   },
   {
     id: 8,

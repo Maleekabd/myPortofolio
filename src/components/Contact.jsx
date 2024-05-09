@@ -13,7 +13,7 @@ const Contact = () => {
 
     emailjs
       .send("service_1c1vd3s", "template_g3p83sp", {
-        to_email: "malikabdurrasyid86@gmail.com",
+        email: email,
         from_name: fullName,
         message: message,
       })
