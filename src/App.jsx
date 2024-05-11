@@ -10,7 +10,10 @@ import About from "./components/About";
 import { AboutMeSpec } from "./components/About";
 import Frontend from "./components/Frontend";
 import ComputerNetwork from "./components/ComputerNetwork";
-import ApaItuJaringanKomputer from "./components/ApaItuJaringanKomputer";
+import ApaItuJaringanKomputer from "./contents/computer-network/ApaItuJaringanKomputer";
+import NetworkLayer from "./contents/computer-network/osi-layer-tcp-ip";
+import Stats from "./components/stats";
+import BackButton from "./elements/BackButton";
 
 function App() {
   return (
@@ -27,6 +30,7 @@ function App() {
                 <Landingpage />
                 <About />
                 <Timeline />
+                {/* <Stats /> */}
                 <Card />
               </main>
               <footer>
@@ -66,11 +70,23 @@ function App() {
           path="/computer-network-projects/apa-itu-jaringan-komputer"
           element={
             <>
-              <nav>
-                <Navbar />
-              </nav>
               <main>
+                <BackButton />
                 <ApaItuJaringanKomputer />
+              </main>
+              <footer>
+                <Footer />
+              </footer>
+            </>
+          }
+        />
+        <Route
+          path="/computer-network-projects/osi-layer-dan-tcpip-layer"
+          element={
+            <>
+              <main>
+                <BackButton />
+                <NetworkLayer />
               </main>
               <footer>
                 <Footer />

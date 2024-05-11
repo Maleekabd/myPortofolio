@@ -5,7 +5,6 @@ import ShopBayy from "../assets/skill_img/shopbay.jpeg";
 import VegetableBox from "../assets/skill_img/vegetable_box.jpeg";
 import MusicSpot from "../assets/skill_img/musicspot.jpeg";
 import Login from "../assets/skill_img/Login.jpeg";
-import Markdown from "../assets/skill_img/Markdown.jpeg";
 import WebApp from "../assets/skill_img/webapp.png";
 import Portof from "../assets/skill_img/portof.png";
 

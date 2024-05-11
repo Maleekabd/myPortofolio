@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { materi } from "./ComputerNetwork";
+import { materi } from "../../components/ComputerNetwork";
 import { Link } from "react-router-dom";
 
 const ApaItuJaringanKomputer = () => {

@@ -1,15 +1,26 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import LOGO from "../assets/logo-no-background.png";
 import { Link } from "react-router-dom";
-import { IoLogoTiktok } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+  const navigate = useNavigate()
+
   const [prevScroll, setPrevScroll] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [Path, setPath] = useState(null)
 
+  // handler path
+  useEffect(() => {
+    const Path = document.location.pathname
+    setPath(Path)
+  },[])
+
+  // handler scroll
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
@@ -74,7 +85,9 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="flex items-center">
-          <img src={LOGO} alt="logo" className="h-10 w-20" />
+          <Link to={"/"}>
+            <img src={LOGO} alt="logo" className="h-10 w-20" />
+          </Link>
         </div>
         <ul className="items-stretch hidden space-x-3 md:flex">
           <li className="flex">
@@ -105,16 +118,6 @@ const Navbar = () => {
               className="hover:text-violet-400 flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
             >
               <SiGmail />
-            </a>
-          </li>
-          <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="https://www.tiktok.com/@__malikabd"
-              target="_blank"
-              className="hover:text-violet-400 flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
-            >
-              <IoLogoTiktok />
             </a>
           </li>
         </ul>
