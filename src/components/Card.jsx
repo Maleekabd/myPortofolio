@@ -29,52 +29,42 @@ const skills = [
 const Card = () => {
   return (
     <>
-      <br id="myskills" />
-      <br />
-      <br />
-      <section>
-        <h1
-          className="text-4xl p-3 m-3 italic underline"
-          style={{
-            fontFamily: "PROGRESS PERSONAL USE",
-          }}
-        >
-          My Skills
-        </h1>
+      <section className="bg-slate-200 h-[105vh]">
+        <h1 className="text-4xl p-3 m-3">My Skills</h1>
         <div className="min-[320px]:grid min-[320px]:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 m-3 p-3 gap-4 rounded-md dark:bg-gray-900 dark:text-gray-100">
           {skills.map((skill, index) => (
-              <Link
-                to={`${skill.path}`}
-                key={index}
-                className="flex flex-wrap border rounded-md hover:scale-105"
-                style={{
-                  transition: "all 0.2s ease",
-                }}
-              >
-                <div>
-                  <img
-                    src={skill.image}
-                    alt={skill.title}
-                    className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
-                  />
-                  <div className="relative flex flex-col justify-between p-6 h-96">
-                    <div className="space-y-2">
-                      <h2 className="text-3xl font-semibold tracking-normal">
-                        {skill.title}
-                      </h2>
-                      <p className="dark:text-gray-100 text-justify">
-                        {skill.description}
-                      </p>
-                    </div>
-                    <button
-                      type="button"
-                      className="absolute bottom-0 left-0 flex items-center justify-center w-full p-3 font-semibold tracki rounded-md dark:bg-violet-400 dark:text-gray-900 bg-violet-400 hover:bg-violet-200"
-                    > 
-                      See more
-                    </button>
+            <Link
+              to={`${skill.path}`}
+              key={index}
+              className="flex flex-wrap border rounded-md shadow-md hover:scale-105 bg-white"
+              style={{
+                transition: "all 0.2s ease",
+              }}
+            >
+              <div>
+                <img
+                  src={skill.image}
+                  alt={skill.title}
+                  className="object-cover object-center w-full rounded-t-md h-44 dark:bg-gray-500"
+                />
+                <div className="relative flex flex-col justify-between p-6 h-80">
+                  <div className="space-y-2">
+                    <h2 className="text-3xl font-semibold tracking-normal">
+                      {skill.title}
+                    </h2>
+                    <p className="dark:text-gray-100 text-justify">
+                      {skill.description}
+                    </p>
                   </div>
+                  <button
+                    type="button"
+                    className="absolute bottom-2 flex items-center justify-center w-auto p-3 font-semibold tracki rounded-md dark:bg-violet-400 dark:text-gray-900 bg-violet-400 hover:bg-violet-200"
+                  >
+                    See more
+                  </button>
                 </div>
-              </Link>
+              </div>
+            </Link>
           ))}
         </div>
       </section>
