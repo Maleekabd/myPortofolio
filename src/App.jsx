@@ -6,8 +6,8 @@ import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
-import { AboutMeSpec } from "./components/About";
+// import About from "./components/About";
+// import { AboutMeSpec } from "./components/About";
 import Frontend from "./components/Frontend";
 import ComputerNetwork from "./components/ComputerNetwork";
 import ApaItuJaringanKomputer from "./contents/computer-network/ApaItuJaringanKomputer";
@@ -23,15 +23,12 @@ function App() {
           path="/"
           element={
             <>
-              <header>
-                <Navbar />
-              </header>
               <main>
                 <Landingpage />
-                <About />
+                {/* <About /> */}
                 <Timeline />
                 {/* <Stats /> */}
-                <Card />
+                <Card />  
               </main>
               <footer>
                 <Contact />
@@ -45,7 +42,7 @@ function App() {
           element={
             <>
               <main>
-                <AboutMeSpec />
+                {/* <AboutMeSpec /> */}
               </main>
               <footer>
                 <Footer />
