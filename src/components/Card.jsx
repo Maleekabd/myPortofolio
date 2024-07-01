@@ -29,7 +29,7 @@ const skills = [
 const Card = () => {
   return (
     <>
-      <section className="bg-slate-200 h-[105vh]">
+      <section className="bg-slate-100 h-[105vh]">
         <h1 className="text-4xl p-3 m-3">My Skills</h1>
         <div className="min-[320px]:grid min-[320px]:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 m-3 p-3 gap-4 rounded-md dark:bg-gray-900 dark:text-gray-100">
           {skills.map((skill, index) => (
