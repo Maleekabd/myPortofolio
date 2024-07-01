@@ -1,0 +1,12 @@
+.stats-animation {
+  animation: moving 5s linear infinite;
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}

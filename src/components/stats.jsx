@@ -1,11 +1,12 @@
 import React from "react";
+import "./stats.css";
 
 const Stats = () => {
   return (
-    <section className="bg-gray-700 h-56 dark:bg-gray-100 dark:text-gray-800">
-      <div className="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8 ">
+    <section className="bg-gray-400 h-60 dark:bg-gray-100 dark:text-gray-800">
+      <div className="container mx-auto space-y-6 text-center lg:p-8 lg:space-y-8 ">
         <h2 className="text-white text-3xl font-bold">Fully compatible with</h2>
-        <div className="flex flex-wrap justify-center lg:justify-between">
+        <div className="stats-animation flex flex-wrap justify-center lg:justify-between">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32 32"

@@ -25,15 +25,9 @@ function App() {
             <>
               <main>
                 <Landingpage />
-                {/* <About /> */}
                 <Timeline />
-                {/* <Stats /> */}
-                <Card />  
+                <Card />
               </main>
-              <footer>
-                <Contact />
-                <Footer />
-              </footer>
             </>
           }
         />
@@ -41,9 +35,7 @@ function App() {
           path="/about"
           element={
             <>
-              <main>
-                {/* <AboutMeSpec /> */}
-              </main>
+              <main>{/* <AboutMeSpec /> */}</main>
               <footer>
                 <Footer />
               </footer>

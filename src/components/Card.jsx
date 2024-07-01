@@ -2,6 +2,9 @@ import quantum from "../assets/skill/quantum.jpg";
 import reactjs from "../assets/skill/reactjs.jpg";
 import computernetwork from "../assets/skill/computernetwork.jpg";
 import { Link } from "react-router-dom";
+import Stats from "./stats";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 const skills = [
   {
@@ -29,9 +32,10 @@ const skills = [
 const Card = () => {
   return (
     <>
-      <section className="bg-slate-100 h-[105vh]">
+      <section className="">
+        <Stats />
         <h1 className="text-4xl p-3 m-3">My Skills</h1>
-        <div className="min-[320px]:grid min-[320px]:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 m-3 p-3 gap-4 rounded-md dark:bg-gray-900 dark:text-gray-100">
+        <div className="bg-gray-300 min-[320px]:grid min-[320px]:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 p-6 gap-4 rounded-md dark:bg-gray-900 dark:text-gray-100">
           {skills.map((skill, index) => (
             <Link
               to={`${skill.path}`}
@@ -67,6 +71,8 @@ const Card = () => {
             </Link>
           ))}
         </div>
+        <Contact />
+        <Footer />
       </section>
     </>
   );
