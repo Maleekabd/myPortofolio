@@ -12,8 +12,8 @@ import Frontend from "./components/Frontend";
 import ComputerNetwork from "./components/ComputerNetwork";
 import ApaItuJaringanKomputer from "./contents/computer-network/ApaItuJaringanKomputer";
 import NetworkLayer from "./contents/computer-network/osi-layer-tcp-ip";
-import Stats from "./components/stats";
 import BackButton from "./elements/BackButton";
+import Softskills from "./components/Softskills";
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
             <>
               <main>
                 <Landingpage />
+                <Softskills />
                 <Timeline />
                 <Card />
               </main>

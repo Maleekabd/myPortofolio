@@ -6,6 +6,7 @@ import LOGO from "../assets/logo-no-background.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./navbar.css";
+import { scrollToTarget } from "../utils/func";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -33,21 +34,6 @@ const Navbar = () => {
     };
   }, [prevScroll]);
 
-  const scrollToTimeline = (e) => {
-    const target = document.getElementById("timeline");
-    target.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToMySkill = (e) => {
-    const target = document.getElementById("myskills");
-    target.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToAbout = (e) => {
-    const target = document.getElementById("target");
-    target.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div className="flex items-center justify-between fixed h-20 w-full">
       <div className="ml-16 m-2 p-2">
@@ -55,9 +41,11 @@ const Navbar = () => {
       </div>
       <ul className="flex justify-between cursor-pointer m-2 mr-16 p-2 gap-16">
         <li className="nav">Home</li>
-        <li className="nav">Timeline</li>
+        <li className="nav">
+          <button onClick={scrollToTarget}>Timeline</button>
+        </li>
         <li className="nav">Skills</li>
-        <li id="#target">About</li>
+        <li className="nav">About</li>
       </ul>
     </div>
   );
