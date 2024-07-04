@@ -4,11 +4,19 @@ import DB from "../assets/db.mp4";
 
 const landingpage = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <section className="min-[320px]:justify-evenly min-[320px]:flex-col flex lg:flex-row h-screen  md:justify-between lg:justify-between">
-        <div className="w-full p-5 flex items-center">
-          <div className="">
+        <div className="relative w-full flex items-center">
+          <video
+            className="-z-10 absolute top-0 left-0 w-full h-full object-cover opacity-15"
+            loop
+            muted
+            autoPlay
+          >
+            <source src={DB} />
+          </video>
+          <div className="min-[320px]:flex min-[320px]:justify-center min-[320px]:flex-col p-8 min-[320px]:h-screen md-w-3/6 lg:w-3/6">
             <h3 className="">hi. i am Malik Abdurrasyid</h3>
             <h1 className=" min-[320px]:text-[28px] md:text-[6em] lg:text-[6em]">
               Frontend Web Engineer
@@ -21,23 +29,15 @@ const landingpage = () => {
             </p>
           </div>
         </div>
-        <div className="w-full flex items-center justify-center">
+        {/* <div className="relative w-5/6 flex items-center justify-center">
           <img
-            className="min-[320px]:w-60 min-[320px]:rounded-full md:rounded-none lg:w-full lg:rounded-none md:h-screen lg:h-screen"
+            className=" min-[320px]:w-60 min-[320px]:rounded-full md:rounded-none lg:w-full lg:rounded-none md:h-screen lg:h-screen"
             src={NoBg}
             alt=""
           />
-        </div>
-        <video
-          className="absolute -z-10 w-full opacity-10 h-full object-cover"
-          loop
-          muted
-          autoPlay
-        >
-          <source src={DB} />
-        </video>
+        </div> */}
       </section>
-    </div>
+    </>
   );
 };
 

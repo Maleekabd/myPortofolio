@@ -29,22 +29,22 @@ const Stats = () => {
     MongoDB,
     NodeJs,
     Linux,
-    SnortTM,
-    Suricata,
-    Splunk,
-    WireShark,
-    Qiskit,
-    Mikrotik,
+    // SnortTM,
+    // Suricata,
+    // Splunk,
+    // WireShark,
+    // Qiskit,
+    // Mikrotik,
     Cisco,
     Python,
-    Netmiko,
-    GNURadio,
+    // Netmiko,
+    // GNURadio,
     Redux,
   ];
 
   return (
-    <section className="bg-gray-400 h-auto dark:bg-gray-100 dark:text-gray-800">
-      <div className="container mx-auto space-y-6 text-center lg:p-8 lg:space-y-8 ">
+    <section className="bg-gray-400 h-auto  dark:bg-gray-100 dark:text-gray-800">
+      <div className="container space-y-6 text-center lg:p-8 lg:space-y-8 ">
         <h2 className="text-white text-3xl font-bold">Tech Stacks</h2>
         <div className="grid  min-[320px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-10 place-content-center">
           {image.map((item) => (

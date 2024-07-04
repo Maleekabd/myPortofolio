@@ -35,7 +35,7 @@ const Navbar = () => {
   }, [prevScroll]);
 
   return (
-    <div className="flex items-center justify-between fixed h-20 w-full">
+    <div className="flex items-center justify-between fixed top-0 h-16 w-full z-10">
       <div className="ml-16 m-2 p-2">
         <img className="w-24" src={LOGO} alt="" />
       </div>
