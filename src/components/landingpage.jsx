@@ -9,16 +9,18 @@ const landingpage = () => {
       <section className="min-[320px]:justify-evenly min-[320px]:flex-col flex lg:flex-row h-screen  md:justify-between lg:justify-between">
         <div className="relative w-full flex items-center">
           <video
-            className="-z-10 absolute top-0 left-0 w-full h-full object-cover opacity-15"
+            className="min-[320px]:hidden md:block lg:block -z-10 absolute top-0 left-0 w-full h-full object-cover opacity-15"
             loop
             muted
             autoPlay
           >
             <source src={DB} />
           </video>
-          <div className="min-[320px]:flex min-[320px]:justify-center min-[320px]:flex-col p-8 min-[320px]:h-screen md-w-3/6 lg:w-3/6">
-            <h3 className="">hi. i am Malik Abdurrasyid</h3>
-            <h1 className=" min-[320px]:text-[28px] md:text-[6em] lg:text-[6em]">
+          <div className="relative min-[320px]:flex min-[320px]:justify-evenly min-[320px]:flex-col p-8 min-[320px]:h-screen md-w-3/6 lg:w-3/6 md:block lg:block lg:h-auto">
+            <span className="sm:hidden md:hidden lg:hidden absolute -top-5 -right-10 w-32 rounded-[100%] bg-teal-200 h-32"></span>
+            <span className="sm:hidden md:hidden lg:hidden absolute -z-10 -bottom-5 -left-10 w-32 rounded-[100%] bg-teal-200 h-32"></span>
+            <h3 className="min-[320px]:text-xl">hi. i am Malik Abdurrasyid</h3>
+            <h1 className=" min-[320px]:text-[55px] min-[320px]:font-bold lg:font-normal md:text-[6em] lg:text-[6em]">
               Frontend Web Engineer
             </h1>
             <p className="min-[320px]:block lg:block">
