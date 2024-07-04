@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./navbar.css";
 import { scrollToTarget } from "../utils/func";
+import HamburgerMenu from "../elements/HamburgerMenu";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -35,19 +36,27 @@ const Navbar = () => {
   }, [prevScroll]);
 
   return (
-    <div className="flex items-center justify-between fixed top-0 h-16 w-full z-10">
-      <div className="ml-16 m-2 p-2">
-        <img className="w-24" src={LOGO} alt="" />
+    <>
+      {/* md large screen */}
+      <div className="min-[320px]:hidden sm:hidden md:block lg:flex lg:items-center lg:justify-between fixed top-0 h-16 w-full z-10">
+        <div className="ml-16 m-2 p-2">
+          <img className="w-24" src={LOGO} alt="" />
+        </div>
+        <ul className="flex justify-between cursor-pointer m-2 mr-16 p-2 gap-16">
+          <li className="nav">Home</li>
+          <li className="nav">
+            <button onClick={scrollToTarget}>Timeline</button>
+          </li>
+          <li className="nav">Skills</li>
+          <li className="nav">About</li>
+        </ul>
       </div>
-      <ul className="flex justify-between cursor-pointer m-2 mr-16 p-2 gap-16">
-        <li className="nav">Home</li>
-        <li className="nav">
-          <button onClick={scrollToTarget}>Timeline</button>
-        </li>
-        <li className="nav">Skills</li>
-        <li className="nav">About</li>
-      </ul>
-    </div>
+
+      {/* min-320px, sm screen */}
+      <div className="">
+        <HamburgerMenu />
+      </div>
+    </>
   );
 };
 

@@ -1,0 +1,47 @@
+.parent-skills h1 {
+  color: white;
+}
+
+.bg-image-fe,
+.bg-image-qsf,
+.bg-image-ne {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image-fe {
+  background-image: url(../assets/skill/reactjs.jpg);
+}
+
+.bg-image-qsf {
+  background-image: url(../assets/skill/quantum.jpg);
+}
+.bg-image-ne {
+  background-image: url(../assets/skill/computernetwork.jpg);
+}
+
+.animation-to-left {
+  animation: movingToLeft 0.5s linear infinite;
+}
+
+.animation-to-right {
+  animation: movingToRight 0.5s linear infinite;
+}
+
+@keyframes movingToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-15%);
+  }
+}
+@keyframes movingToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(15%);
+  }
+}

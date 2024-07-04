@@ -23,10 +23,12 @@ function App() {
           path="/"
           element={
             <>
-                <Landingpage />
-                <Softskills />
-                <Timeline />
-                <Card />
+              <Landingpage />
+              <Softskills />
+              <Timeline />
+              <Card />
+              <Contact />
+              <Footer />
             </>
           }
         />

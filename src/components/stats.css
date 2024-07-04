@@ -1,12 +1,29 @@
-.stats-animation {
-  animation: moving 5s linear infinite;
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-@keyframes moving {
+.logos-slide {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  animation: movingItem 10s infinite linear;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 40px;
+}
+
+@keyframes movingItem {
   from {
-    transform: translateX(-50px);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(50px);
+    transform: translateX(-100%);
   }
 }
