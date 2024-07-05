@@ -11,11 +11,10 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  animation: movingItem 10s infinite linear;
+  animation: movingItem 30s infinite linear;
 }
 
 .logos-slide img {
-  height: 100px;
   margin: 0 40px;
 }
 

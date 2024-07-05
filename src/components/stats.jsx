@@ -43,10 +43,12 @@ const Stats = () => {
   ];
 
   return (
-    <section className="h-auto bg-yellow-300 dark:bg-gray-100 dark:text-gray-800">
-      <div className="space-y-6 text-center lg:p-8 lg:space-y-8 ">
-        <h1 className="text-[8em] italic">Tech Stacks</h1>
-        <p className="text-center text-6xl">
+    <section id="skills" className="h-auto dark:bg-gray-100 dark:text-gray-800">
+      <div className="space-y-6 text-center lg:space-y-8 ">
+        <h1 className=" min-[320px]:text-3xl min-[320px]:font-bold min-[320px]:p-10 md:text-[8em] lg:text-8xl lg:font-normal italic">
+          Tech Stacks
+        </h1>
+        <p className="min-[320px]:text-lg min-[320px]:px-5 text-center md:text-6xl lg:text-6xl">
           Hi There. nice to meet you on my portfolio!{" "}
           <span className="text-rose-400">
             I am a developer passionate about technology
@@ -54,13 +56,21 @@ const Stats = () => {
           . Throughout my career, I have mastered various tech stacks that
           enable me to build innovative and efficient applications.
         </p>
-        <div className="logos">
+        <div className="min-[320px]:h-28 logos bg-yellow-400">
           <div className="logos-slide">
             {image.map((item, index) => (
-              <img key={index} className="" src={item} alt="" />
+              <img
+                loading="lazy"
+                key={index}
+                className="min-[320px]:h-10 md:h-24 lg:h-24"
+                src={item}
+                alt=""
+              />
             ))}
             {image.map((item, index) => (
               <img
+                className="min-[320px]:h-10 md:h-24 lg:h-24"
+                loading="lazy"
                 key={`duplicate-${index}`}
                 src={item}
                 alt={`Logo ${index}`}

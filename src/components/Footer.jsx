@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section className="border-t dark:bg-gray-800 dark:text-gray-50">
+    <section className="bg-yellow-300 dark:bg-gray-800 dark:text-gray-50">
       <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row dark:divide-gray-400">
         <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
           <li>
@@ -32,6 +32,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div className="container flex flex-col mx-auto md:p-8 lg:flex-row dark:divide-gray-400 items-center justify-center">
+        copyright @2024 Malik Abdurrasyid
       </div>
     </section>
   );

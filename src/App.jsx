@@ -24,10 +24,10 @@ function App() {
           element={
             <>
               <Landingpage />
-              <Softskills />
-              <Timeline />
+              {/* <Softskills /> */}
+              {/* <Timeline /> */}
               <Card />
-              <Contact />
+              {/* <Contact /> */}
               <Footer />
             </>
           }

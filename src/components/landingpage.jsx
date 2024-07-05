@@ -8,8 +8,9 @@ const landingpage = () => {
       <Navbar />
       <section
         id="landing-page"
-        className="bg-lime-100 min-[320px]:justify-evenly min-[320px]:flex-col flex lg:flex-row h-screen  md:justify-between lg:justify-between"
+        className="bg-gray-300 min-[320px]:justify-evenly min-[320px]:flex-col flex lg:flex-row h-screen  md:justify-between lg:justify-between relative overflow-hidden"
       >
+        <span className=" absolute bg-gradient-to-tr from-gray-300 to-white -right-64 -top-80 rounded-[500px] h-[60em] w-[60em]"></span>
         <div className="w-full flex justify-evenly items-center">
           {/* <video
             className="min-[320px]:hidden md:block lg:block -z-10 absolute top-0 left-0 w-full h-full object-cover opacity-15"
@@ -33,8 +34,13 @@ const landingpage = () => {
               Software Development, and Frontend Web using React
             </p>
           </div>
-          <figure className="w-full flex items-center justify-center">
-            <img className="h-96 rounded-full" src={NoBg} alt="" />
+          <figure className="min-[320px]:hidden md:block lg:block z-10 w-full flex items-center justify-center">
+            <img
+              loading="lazy"
+              className="h-[30em] rounded-full bg-gradient-to-br from bg-gray-900 to-black "
+              src={NoBg}
+              alt=""
+            />
           </figure>
         </div>
         {/* <div className="relative w-5/6 flex items-center justify-center">

@@ -16,3 +16,13 @@ export const scrollToMySkills = () => {
   const target = document.getElementById("skills");
   target.scrollIntoView({ behavior: "smooth" });
 };
+
+export const scrollToMyProjects = () => {
+  const target = document.getElementById("projects");
+  target.scrollIntoView({ behavior: "smooth" });
+};
+
+export const scrollToMyContact = () => {
+  const target = document.getElementById("contact");
+  target.scrollIntoView({ behavior: "smooth" });
+};

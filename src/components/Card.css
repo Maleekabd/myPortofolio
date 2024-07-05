@@ -1,5 +1,6 @@
 .parent-skills h1 {
   color: white;
+  font-style: italic;
 }
 
 .bg-image-fe,
@@ -14,6 +15,7 @@
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity)) /* #fde047 */;
 }
+
 
 .bg-image-fe {
   background-image: url(../assets/skill/reactjs.jpg);
