@@ -7,17 +7,12 @@ export const scrollToTarget = () => {
   document.getElementById("target").scrollIntoView({ behavior: "smooth" });
 };
 
-const scrollToTimeline = (e) => {
-  const target = document.getElementById("timeline");
+export const scrollToLandingPage = (e) => {
+  const target = document.getElementById("landing-page");
   target.scrollIntoView({ behavior: "smooth" });
 };
 
-const scrollToMySkill = (e) => {
-  const target = document.getElementById("myskills");
-  target.scrollIntoView({ behavior: "smooth" });
-};
-
-const scrollToAbout = (e) => {
-  const target = document.getElementById("target");
+export const scrollToMySkills = () => {
+  const target = document.getElementById("skills");
   target.scrollIntoView({ behavior: "smooth" });
 };

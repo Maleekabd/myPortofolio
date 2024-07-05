@@ -6,17 +6,20 @@ const landingpage = () => {
   return (
     <>
       <Navbar />
-      <section className="min-[320px]:justify-evenly min-[320px]:flex-col flex lg:flex-row h-screen  md:justify-between lg:justify-between">
-        <div className="relative w-full flex items-center">
-          <video
+      <section
+        id="landing-page"
+        className="bg-lime-100 min-[320px]:justify-evenly min-[320px]:flex-col flex lg:flex-row h-screen  md:justify-between lg:justify-between"
+      >
+        <div className="w-full flex justify-evenly items-center">
+          {/* <video
             className="min-[320px]:hidden md:block lg:block -z-10 absolute top-0 left-0 w-full h-full object-cover opacity-15"
             loop
             muted
             autoPlay
           >
             <source src={DB} />
-          </video>
-          <div className="relative min-[320px]:flex min-[320px]:justify-evenly min-[320px]:flex-col p-8 min-[320px]:h-screen md-w-3/6 lg:w-3/6 md:block lg:block lg:h-auto">
+          </video> */}
+          <div className="relative min-[320px]:flex min-[320px]:justify-evenly min-[320px]:flex-col p-8 min-[320px]:h-screen md-w-3/6 lg:w-full md:block lg:block lg:h-auto">
             <span className="sm:hidden md:hidden lg:hidden absolute -top-5 -right-10 w-32 rounded-[100%] bg-teal-200 h-32"></span>
             <span className="sm:hidden md:hidden lg:hidden absolute -z-10 -bottom-5 -left-10 w-32 rounded-[100%] bg-teal-200 h-32"></span>
             <h3 className="min-[320px]:text-xl">hi. i am Malik Abdurrasyid</h3>
@@ -30,6 +33,9 @@ const landingpage = () => {
               Software Development, and Frontend Web using React
             </p>
           </div>
+          <figure className="w-full flex items-center justify-center">
+            <img className="h-96 rounded-full" src={NoBg} alt="" />
+          </figure>
         </div>
         {/* <div className="relative w-5/6 flex items-center justify-center">
           <img

@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 import "./navbar.css";
 import { scrollToTarget } from "../utils/func";
 import HamburgerMenu from "../elements/HamburgerMenu";
+import { scrollToLandingPage } from "../utils/func";
+import { scrollToMySkills } from "../utils/func";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -43,12 +45,24 @@ const Navbar = () => {
           <img className="w-24" src={LOGO} alt="" />
         </div>
         <ul className="flex justify-between cursor-pointer m-2 mr-16 p-2 gap-16">
-          <li className="nav">Home</li>
+          <li className="nav">
+            <button onClick={scrollToLandingPage}>Home</button>
+          </li>
           <li className="nav">
             <button onClick={scrollToTarget}>Timeline</button>
           </li>
-          <li className="nav">Skills</li>
-          <li className="nav">About</li>
+          <li className="nav">
+            <button onClick={scrollToMySkills}>Skills</button>
+          </li>
+          <li className="nav">
+            <button onClick={scrollToMySkills}>Projects</button>
+          </li>
+          <li className="nav">
+            <button>Contact</button>
+          </li>
+          <li className="nav">
+            <button>About</button>
+          </li>
         </ul>
       </div>
 

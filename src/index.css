@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-    font-family: 'syne','Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "syne", "Poppins", "Franklin Gothic Medium", "Arial Narrow",
+    Arial, sans-serif;
 }

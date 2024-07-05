@@ -43,8 +43,17 @@ const Stats = () => {
   ];
 
   return (
-    <section className="h-auto  dark:bg-gray-100 dark:text-gray-800">
+    <section className="h-auto bg-yellow-300 dark:bg-gray-100 dark:text-gray-800">
       <div className="space-y-6 text-center lg:p-8 lg:space-y-8 ">
+        <h1 className="text-[8em] italic">Tech Stacks</h1>
+        <p className="text-center text-6xl">
+          Hi There. nice to meet you on my portfolio!{" "}
+          <span className="text-rose-400">
+            I am a developer passionate about technology
+          </span>
+          . Throughout my career, I have mastered various tech stacks that
+          enable me to build innovative and efficient applications.
+        </p>
         <div className="logos">
           <div className="logos-slide">
             {image.map((item, index) => (

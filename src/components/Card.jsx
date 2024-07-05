@@ -15,7 +15,6 @@ import {
 import { useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 const skills = [
   {
@@ -58,8 +57,8 @@ const Card = () => {
   return (
     <>
       <Stats />
-      <section className="bg-yellow-300 h-auto">
-        <div className="flex flex-col">
+      <section id="skills" className=" h-auto">
+        <div className="flex flex-col"x>
           <span
             data-aos="fade-right"
             className="-leading-5 text-left pl-5 text-[13em]  italic text-yellow-500 flex items-center justify-between"
@@ -87,15 +86,21 @@ const Card = () => {
             </h2>
           </div>
           <div className="parent-skills w-3/6 m-5 p-5">
-            <div className="bg-image-fe bg-lime-400 p-4 bg-i">
-              <h1 className="text-6xl">Frontend Web Engineer</h1>
-            </div>
-            <div className="bg-image-qsf bg-lime-400 mt-2 p-4">
-              <h1 className="text-6xl">Quantum Software Engineer</h1>
-            </div>
-            <div className="bg-image-ne bg-lime-400 mt-2 p-4">
-              <h1 className="text-6xl">Network Engineering</h1>
-            </div>
+            <a href="/frontend-react-projects">
+              <div className="bg-image-fe bg-lime-400 p-4 bg-i">
+                <h1 className="text-6xl">Frontend Web Engineer</h1>
+              </div>
+            </a>
+            <a href="/quantum-software-engineer-projects">
+              <div className="bg-image-qsf bg-lime-400 mt-2 p-4">
+                <h1 className="text-6xl">Quantum Software Engineer</h1>
+              </div>
+            </a>
+            <a href="/computer-network-projects">
+              <div className="bg-image-ne bg-lime-400 mt-2 p-4">
+                <h1 className="text-6xl">Network Engineering</h1>
+              </div>
+            </a>
             {/* {skills.map((skill, index) => (
                 <Link
                   to={`${skill.path}`}
