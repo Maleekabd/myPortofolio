@@ -46,7 +46,7 @@ const Stats = () => {
     <section id="skills" className="h-auto dark:bg-gray-100 dark:text-gray-800">
       <div className="space-y-6 text-center lg:space-y-8 ">
         <h1 className=" min-[320px]:text-3xl min-[320px]:font-bold min-[320px]:p-10 md:text-[8em] lg:text-8xl lg:font-normal italic">
-          Tech Stacks
+          Skills
         </h1>
         <p className="min-[320px]:text-lg min-[320px]:px-5 text-center md:text-6xl lg:text-6xl">
           Hi There. nice to meet you on my portfolio!{" "}

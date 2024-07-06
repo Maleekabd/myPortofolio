@@ -8,9 +8,9 @@ const landingpage = () => {
       <Navbar />
       <section
         id="landing-page"
-        className="bg-gray-300 min-[320px]:justify-evenly min-[320px]:flex-col flex lg:flex-row h-screen  md:justify-between lg:justify-between relative overflow-hidden"
+        className="min-[320px]:justify-evenly min-[320px]:flex-col flex lg:flex-row h-screen  md:justify-between lg:justify-between relative overflow-hidden"
       >
-        <span className=" absolute bg-gradient-to-tr from-gray-300 to-white -right-64 -top-80 rounded-[500px] h-[60em] w-[60em]"></span>
+        <span className="z-1 absolute bg-gradient-to-tr from-gray-300 to-white -right-64 -top-80 lg:h-[60em] xl:h-[70em] rounded-[400px] lg:w-[60em] xl:w-[60em]"></span>
         <div className="w-full flex justify-evenly items-center">
           {/* <video
             className="min-[320px]:hidden md:block lg:block -z-10 absolute top-0 left-0 w-full h-full object-cover opacity-15"

@@ -57,6 +57,187 @@ const Card = () => {
   return (
     <>
       <Stats />
+      <div className="bg-yellow-300 p-10 flex flex-col items-center justify-around h-auto">
+        <h1 className="min-[320px]:text-2xl min-[320px]:font-bold md:text-8xl md:font-normal lg:text-8xl lg:font-normal italic">
+          Skills Status
+        </h1>
+        <div className="py-6 w-full flex items-start justify-between">
+          <div className="w-full p-5">
+            <div className="w-full">
+              <h1 className="min-[320px]:text-xl md:text-lg lg:text-lg p-2">
+                Javascript
+              </h1>
+              <span id="ProgressLabel" className="sr-only">
+                Loading
+              </span>
+
+              <span
+                role="progressbar"
+                aria-labelledby="ProgressLabel"
+                aria-valuenow="50"
+                className="w-full block rounded-full bg-gray-200"
+              >
+                <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
+                  <span className="font-bold text-white"> 50% </span>
+                </span>
+              </span>
+            </div>
+            <div className="w-full">
+              <h1 className="min-[320px]:text-xl md:text-lg lg:text-lg p-2">
+                Python
+              </h1>
+              <span id="ProgressLabel" className="sr-only">
+                Loading
+              </span>
+
+              <span
+                role="progressbar"
+                aria-labelledby="ProgressLabel"
+                aria-valuenow="50"
+                className="w-full block rounded-full bg-gray-200"
+              >
+                <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
+                  <span className="font-bold text-white"> 50% </span>
+                </span>
+              </span>
+            </div>
+            <div className="w-full">
+              <h1 className="min-[320px]:text-xl md:text-lg lg:text-lg p-2">
+                Redux
+              </h1>
+              <span id="ProgressLabel" className="sr-only">
+                Loading
+              </span>
+
+              <span
+                role="progressbar"
+                aria-labelledby="ProgressLabel"
+                aria-valuenow="50"
+                className="w-full block rounded-full bg-gray-200"
+              >
+                <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
+                  <span className="font-bold text-white"> 50% </span>
+                </span>
+              </span>
+            </div>
+            <div className="w-full">
+              <h1 className="min-[320px]:text-xl md:text-lg lg:text-lg p-2">
+                Linux
+              </h1>
+              <span id="ProgressLabel" className="sr-only">
+                Loading
+              </span>
+
+              <span
+                role="progressbar"
+                aria-labelledby="ProgressLabel"
+                aria-valuenow="50"
+                className="w-full block rounded-full bg-gray-200"
+              >
+                <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
+                  <span className="font-bold text-white"> 50% </span>
+                </span>
+              </span>
+            </div>
+            <div className="w-full">
+              <h1 className="min-[320px]:text-xl md:text-lg lg:text-lg p-2">
+                Cisco
+              </h1>
+              <span id="ProgressLabel" className="sr-only">
+                Loading
+              </span>
+
+              <span
+                role="progressbar"
+                aria-labelledby="ProgressLabel"
+                aria-valuenow="50"
+                className="w-full block rounded-full bg-gray-200"
+              >
+                <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
+                  <span className="font-bold text-white"> 50% </span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col justify-between h-full w-full">
+            <h1 className="text-3xl text-center">Soft Skills</h1>
+            <div className="container mx-2 py-6">
+              <div>
+                <div className="softskills relative col-span-12 px-2 space-y-6 sm:col-span-9">
+                  <div className="col-span-12 space-y-12 relative  sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300">
+                    <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
+                      <h3 className="text-xl font-semibold tracking-wide">
+                        Perfectionist
+                      </h3>
+                      <p className="pl-2">
+                        Being a perfectionist in terms of soft skills means
+                        striving for excellence and paying attention to details
+                        to ensure the highest quality of work.{" "}
+                      </p>
+                    </div>
+                    <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
+                      <h3 className="text-xl font-semibold tracking-wide">
+                        Communication Skills
+                      </h3>
+                      <p className="pl-2">
+                        Effective communication is essential to build strong
+                        relationships with colleagues, clients and stakeholders.
+                        Not only does this involve the ability to convey
+                        messages in a clear and compelling way, but also the
+                        ability to understand the needs of others and respond to
+                        feedback.
+                      </p>
+                    </div>
+                    <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
+                      <h3 className="text-xl font-semibold tracking-wide">
+                        Leadership
+                      </h3>
+                      <p className="pl-2">
+                        A good leader has the ability to inspire their team to
+                        achieve greatness. They are able to set a clear vision,
+                        communicate it effectively and create a culture of
+                        accountability and excellence.
+                      </p>
+                    </div>
+                    <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
+                      <h3 className="text-xl font-semibold tracking-wide">
+                        Teamwork
+                      </h3>
+                      <p className="pl-2">
+                        Teamwork involves the ability to work with others toward
+                        a shared goal. It requires communication, collaboration
+                        and a shared commitment to work in a group.{" "}
+                      </p>
+                    </div>
+                    <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
+                      <h3 className="text-xl font-semibold tracking-wide">
+                        Problem Solving
+                      </h3>
+                      <p className="pl-2">
+                        Problem-solving involves the ability to come up with
+                        alternative solutions. This skill is crucial to
+                        identifying and addressing complex challenges and
+                        opportunities in a variety of contexts.
+                      </p>
+                    </div>
+                    <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
+                      <h3 className="text-xl font-semibold tracking-wide">
+                        Work Ethic
+                      </h3>
+                      <p className="pl-2">
+                        Work ethic demonstrates an individual’s commitment to
+                        their job. Having a strong work ethic makes you seem
+                        more reliable and dependable, which improves your
+                        credibility in the workplace.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section id="projects" className=" bg-yellow-300 h-auto">
         <div className="flex flex-col">
           <span
@@ -141,106 +322,6 @@ const Card = () => {
                   </div>
                 </Link>
               ))} */}
-          </div>
-        </div>
-        <div className="p-10 flex flex-col items-center justify-around h-screen">
-          <h1 className="min-[320px]:text-2xl min-[320px]:font-bold md:text-7xl md:font-normal lg:text-7xl lg:font-normal">
-            Skills Status
-          </h1>
-          <div className="w-full">
-            <h1 className="min-[320px]:text-xl md:text-3xl lg:text-3xl p-2">
-              Javascript
-            </h1>
-            <span id="ProgressLabel" className="sr-only">
-              Loading
-            </span>
-
-            <span
-              role="progressbar"
-              aria-labelledby="ProgressLabel"
-              aria-valuenow="50"
-              className="w-full block rounded-full bg-gray-200"
-            >
-              <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
-                <span className="font-bold text-white"> 50% </span>
-              </span>
-            </span>
-          </div>
-          <div className="w-full">
-            <h1 className="min-[320px]:text-xl md:text-3xl lg:text-3xl p-2">
-              Python
-            </h1>
-            <span id="ProgressLabel" className="sr-only">
-              Loading
-            </span>
-
-            <span
-              role="progressbar"
-              aria-labelledby="ProgressLabel"
-              aria-valuenow="50"
-              className="w-full block rounded-full bg-gray-200"
-            >
-              <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
-                <span className="font-bold text-white"> 50% </span>
-              </span>
-            </span>
-          </div>
-          <div className="w-full">
-            <h1 className="min-[320px]:text-xl md:text-3xl lg:text-3xl p-2">
-              Redux
-            </h1>
-            <span id="ProgressLabel" className="sr-only">
-              Loading
-            </span>
-
-            <span
-              role="progressbar"
-              aria-labelledby="ProgressLabel"
-              aria-valuenow="50"
-              className="w-full block rounded-full bg-gray-200"
-            >
-              <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
-                <span className="font-bold text-white"> 50% </span>
-              </span>
-            </span>
-          </div>
-          <div className="w-full">
-            <h1 className="min-[320px]:text-xl md:text-3xl lg:text-3xl p-2">
-              Linux
-            </h1>
-            <span id="ProgressLabel" className="sr-only">
-              Loading
-            </span>
-
-            <span
-              role="progressbar"
-              aria-labelledby="ProgressLabel"
-              aria-valuenow="50"
-              className="w-full block rounded-full bg-gray-200"
-            >
-              <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
-                <span className="font-bold text-white"> 50% </span>
-              </span>
-            </span>
-          </div>
-          <div className="w-full">
-            <h1 className="min-[320px]:text-xl md:text-3xl lg:text-3xl p-2">
-              Cisco
-            </h1>
-            <span id="ProgressLabel" className="sr-only">
-              Loading
-            </span>
-
-            <span
-              role="progressbar"
-              aria-labelledby="ProgressLabel"
-              aria-valuenow="50"
-              className="w-full block rounded-full bg-gray-200"
-            >
-              <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
-                <span className="font-bold text-white"> 50% </span>
-              </span>
-            </span>
           </div>
         </div>
       </section>
