@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+
 export const scrollToTops = () => {
   const target = document.getElementById("top");
   target.scrollIntoView({ behavior: "smooth" });
@@ -26,3 +28,6 @@ export const scrollToMyContact = () => {
   const target = document.getElementById("contact");
   target.scrollIntoView({ behavior: "smooth" });
 };
+
+// show percentage
+

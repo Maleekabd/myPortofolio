@@ -8,7 +8,7 @@ const landingpage = () => {
       <Navbar />
       <section
         id="landing-page"
-        className="min-[320px]:justify-evenly min-[320px]:flex-col flex lg:flex-row h-screen  md:justify-between lg:justify-between relative overflow-hidden"
+        className="bg-yellow-300 min-[320px]:justify-evenly min-[320px]:flex-col flex lg:flex-row h-screen  md:justify-between lg:justify-between relative overflow-hidden"
       >
         <span className="z-1 absolute bg-gradient-to-tr from-gray-300 to-white -right-64 -top-80 lg:h-[60em] xl:h-[70em] rounded-[400px] lg:w-[60em] xl:w-[60em]"></span>
         <div className="w-full flex justify-evenly items-center">

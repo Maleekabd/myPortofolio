@@ -56,7 +56,7 @@ const Stats = () => {
           . Throughout my career, I have mastered various tech stacks that
           enable me to build innovative and efficient applications.
         </p>
-        <div className="min-[320px]:h-28 logos bg-yellow-400">
+        <div className="min-[320px]:h-28 sm:h-44 md:h-44 lg:h-44  logos bg-yellow-400">
           <div className="logos-slide">
             {image.map((item, index) => (
               <img

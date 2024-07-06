@@ -15,6 +15,28 @@ import {
 import { useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { SkillsBar } from "../utils/DOMFunc";
+
+const NewSkillsBar = [
+  { name: "Javascript", percentage: "70%" },
+  { name: "HTML", percentage: "60%" },
+  { name: "CSS", percentage: "60%" },
+  { name: "ReactJS", percentage: "75%" },
+  { name: "TailwindCSS", percentage: "70%" },
+  { name: "MongoDB", percentage: "45%" },
+  { name: "ExpressJS", percentage: "50%" },
+  { name: "Python", percentage: "60%" },
+  { name: "Redux", percentage: "50%" },
+  { name: "Cisco", percentage: "70%" },
+  { name: "Mikrotik", percentage: "60%" },
+  { name: "Linux", percentage: "50%" },
+  { name: "Software Define Radio", percentage: "50%" },
+  { name: "Qiskit", percentage: "50%" },
+  { name: "Cryptography", percentage: "80%" },
+  { name: "NS3", percentage: "40%" },
+  { name: "C#", percentage: "40%" },
+  { name: "Cybersecurity NetDef", percentage: "50%" },
+];
 
 const skills = [
   {
@@ -61,107 +83,16 @@ const Card = () => {
         <h1 className="min-[320px]:text-2xl min-[320px]:font-bold md:text-8xl md:font-normal lg:text-8xl lg:font-normal italic">
           Skills Status
         </h1>
-        <div className="py-6 w-full flex items-start justify-between">
-          <div className="w-full p-5">
-            <div className="w-full">
-              <h1 className="min-[320px]:text-xl md:text-lg lg:text-lg p-2">
-                Javascript
-              </h1>
-              <span id="ProgressLabel" className="sr-only">
-                Loading
-              </span>
-
-              <span
-                role="progressbar"
-                aria-labelledby="ProgressLabel"
-                aria-valuenow="50"
-                className="w-full block rounded-full bg-gray-200"
-              >
-                <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
-                  <span className="font-bold text-white"> 50% </span>
-                </span>
-              </span>
-            </div>
-            <div className="w-full">
-              <h1 className="min-[320px]:text-xl md:text-lg lg:text-lg p-2">
-                Python
-              </h1>
-              <span id="ProgressLabel" className="sr-only">
-                Loading
-              </span>
-
-              <span
-                role="progressbar"
-                aria-labelledby="ProgressLabel"
-                aria-valuenow="50"
-                className="w-full block rounded-full bg-gray-200"
-              >
-                <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
-                  <span className="font-bold text-white"> 50% </span>
-                </span>
-              </span>
-            </div>
-            <div className="w-full">
-              <h1 className="min-[320px]:text-xl md:text-lg lg:text-lg p-2">
-                Redux
-              </h1>
-              <span id="ProgressLabel" className="sr-only">
-                Loading
-              </span>
-
-              <span
-                role="progressbar"
-                aria-labelledby="ProgressLabel"
-                aria-valuenow="50"
-                className="w-full block rounded-full bg-gray-200"
-              >
-                <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
-                  <span className="font-bold text-white"> 50% </span>
-                </span>
-              </span>
-            </div>
-            <div className="w-full">
-              <h1 className="min-[320px]:text-xl md:text-lg lg:text-lg p-2">
-                Linux
-              </h1>
-              <span id="ProgressLabel" className="sr-only">
-                Loading
-              </span>
-
-              <span
-                role="progressbar"
-                aria-labelledby="ProgressLabel"
-                aria-valuenow="50"
-                className="w-full block rounded-full bg-gray-200"
-              >
-                <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
-                  <span className="font-bold text-white"> 50% </span>
-                </span>
-              </span>
-            </div>
-            <div className="w-full">
-              <h1 className="min-[320px]:text-xl md:text-lg lg:text-lg p-2">
-                Cisco
-              </h1>
-              <span id="ProgressLabel" className="sr-only">
-                Loading
-              </span>
-
-              <span
-                role="progressbar"
-                aria-labelledby="ProgressLabel"
-                aria-valuenow="50"
-                className="w-full block rounded-full bg-gray-200"
-              >
-                <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 w-6/12">
-                  <span className="font-bold text-white"> 50% </span>
-                </span>
-              </span>
-            </div>
+        <div className="py-6 w-full flex items-stretch justify-between">
+          <div className=" w-full  h-auto p-5">
+            {NewSkillsBar.map((item, index) => (
+              <section className="" key={index}>
+                <SkillsBar skillName={item.name} percentage={item.percentage} />
+              </section>
+            ))}
           </div>
           <div className="flex flex-col justify-between h-full w-full">
-            <h1 className="text-3xl text-center">Soft Skills</h1>
-            <div className="container mx-2 py-6">
+            <div className="container mx-2 py-4">
               <div>
                 <div className="softskills relative col-span-12 px-2 space-y-6 sm:col-span-9">
                   <div className="col-span-12 space-y-12 relative  sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300">
