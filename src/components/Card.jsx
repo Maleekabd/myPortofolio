@@ -30,7 +30,7 @@ const NewSkillsBar = [
   { name: "Cisco", percentage: "70%" },
   { name: "Mikrotik", percentage: "60%" },
   { name: "Linux", percentage: "50%" },
-  { name: "Software Define Radio", percentage: "50%" },
+  { name: "GNU Radio", percentage: "50%" },
   { name: "Qiskit", percentage: "50%" },
   { name: "Cryptography", percentage: "80%" },
   { name: "NS3", percentage: "40%" },
@@ -79,12 +79,12 @@ const Card = () => {
   return (
     <>
       <Stats />
-      <div className="bg-yellow-300 p-10 flex flex-col items-center justify-around h-auto">
+      <div className="bg-yellow-300 min-[320px]:pt-5 sm:p-6 md:p-10 lg:p-10 flex flex-col items-center justify-around h-auto">
         <h1 className="min-[320px]:text-2xl min-[320px]:font-bold md:text-8xl md:font-normal lg:text-8xl lg:font-normal italic">
           Skills Status
         </h1>
-        <div className="py-6 w-full flex items-stretch justify-between">
-          <div className=" w-full  h-auto p-5">
+        <div className="min-[320px]:py-3 min-[320px]:px-2 sm:py-3 md:py-6 lg:py-6 w-full flex min-[320px]:flex-col sm:flex-col md:flex-row lg:flex-row sm:items-stretch md:items-stretch lg:items-stretch lg:justify-between">
+          <div className=" w-full h-auto p-5">
             {NewSkillsBar.map((item, index) => (
               <section className="" key={index}>
                 <SkillsBar skillName={item.name} percentage={item.percentage} />
@@ -100,7 +100,7 @@ const Card = () => {
                       <h3 className="text-xl font-semibold tracking-wide">
                         Perfectionist
                       </h3>
-                      <p className="pl-2">
+                      <p className="min-[320px]:p-1 sm:p-2 md:p-2 lg:p-2">
                         Being a perfectionist in terms of soft skills means
                         striving for excellence and paying attention to details
                         to ensure the highest quality of work.{" "}
@@ -110,7 +110,7 @@ const Card = () => {
                       <h3 className="text-xl font-semibold tracking-wide">
                         Communication Skills
                       </h3>
-                      <p className="pl-2">
+                      <p className="min-[320px]:p-1 sm:p-2 md:p-2 lg:p-2">
                         Effective communication is essential to build strong
                         relationships with colleagues, clients and stakeholders.
                         Not only does this involve the ability to convey
@@ -123,7 +123,7 @@ const Card = () => {
                       <h3 className="text-xl font-semibold tracking-wide">
                         Leadership
                       </h3>
-                      <p className="pl-2">
+                      <p className="min-[320px]:p-1 sm:p-2 md:p-2 lg:p-2">
                         A good leader has the ability to inspire their team to
                         achieve greatness. They are able to set a clear vision,
                         communicate it effectively and create a culture of
@@ -134,7 +134,7 @@ const Card = () => {
                       <h3 className="text-xl font-semibold tracking-wide">
                         Teamwork
                       </h3>
-                      <p className="pl-2">
+                      <p className="min-[320px]:p-1 sm:p-2 md:p-2 lg:p-2">
                         Teamwork involves the ability to work with others toward
                         a shared goal. It requires communication, collaboration
                         and a shared commitment to work in a group.{" "}
@@ -144,7 +144,7 @@ const Card = () => {
                       <h3 className="text-xl font-semibold tracking-wide">
                         Problem Solving
                       </h3>
-                      <p className="pl-2">
+                      <p className="min-[320px]:p-1 sm:p-2 md:p-2 lg:p-2">
                         Problem-solving involves the ability to come up with
                         alternative solutions. This skill is crucial to
                         identifying and addressing complex challenges and
@@ -155,7 +155,7 @@ const Card = () => {
                       <h3 className="text-xl font-semibold tracking-wide">
                         Work Ethic
                       </h3>
-                      <p className="pl-2">
+                      <p className="min-[320px]:p-1 sm:p-2 md:p-2 lg:p-2">
                         Work ethic demonstrates an individual’s commitment to
                         their job. Having a strong work ethic makes you seem
                         more reliable and dependable, which improves your
@@ -192,9 +192,9 @@ const Card = () => {
         <div className="min-[320px]:grid min-[320px]:grid-cols-1 md:grid md:grid-cols-2 lg:flex lg:flex-row lg:justify-between px-6 gap-4 rounded-md dark:bg-gray-900 dark:text-gray-100">
           <div className=" md:m-5 lg:m-5 md:p-5 lg:p-5 min-[320px]:w-full md:w-3/6 lg:w-3/6 flex items-center min-[320px]:flex-col md:flex-row lg:flex-row">
             <h2 className="min-[320px]:text-xl md:text-7xl lg:text-7xl">
-              Hi, I&apos;m <span className="text-rose-500">Malik</span>. Here
-              you can see the various projects I have worked on. let&apos;s
-              check it out!
+              Hi, Here you can see the various projects{" "}
+              <span className="text-rose-400">I have worked on</span>.
+              let&apos;s check it out!
             </h2>
           </div>
           <div className="parent-skills min-[320px]:w-full md:w-3/6 lg:w-3/6  md:m-5 lg:m-5 md:p-5 lg:p-5">

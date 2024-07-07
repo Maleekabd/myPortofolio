@@ -77,9 +77,7 @@ function App() {
           path="/frontend-react-projects"
           element={
             <>
-              <main>
-                <Frontend />
-              </main>
+              <Frontend />
             </>
           }
         />

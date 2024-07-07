@@ -33,11 +33,11 @@ export const SkillsBar = ({ skillName, percentage }) => {
   return (
     <section className="">
       <div className="skill">
-        <div className="skill-name">{skillName}</div>
-        <div className="skill-bar">
+        <div className="min-[320px]:w-2/6 min-[320px]:text-sm skill-name">{skillName}</div>
+        <div className="min-[320px]:w-3/6 skill-bar">
           <div className="skill-level" ref={skillBar}></div>
         </div>
-        <div className="skill-percentage">{percentage}</div>
+        <div className="min-[320px]:text-sm skill-percentage">{percentage}</div>
       </div>
     </section>
   );
