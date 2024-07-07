@@ -37,9 +37,6 @@ function App() {
           element={
             <>
               <main>{/* <AboutMeSpec /> */}</main>
-              <footer>
-                <Footer />
-              </footer>
             </>
           }
         />
@@ -50,9 +47,6 @@ function App() {
               <main>
                 <ComputerNetwork />
               </main>
-              <footer>
-                <Footer />
-              </footer>
             </>
           }
         />
@@ -64,9 +58,6 @@ function App() {
                 <BackButton />
                 <ApaItuJaringanKomputer />
               </main>
-              <footer>
-                <Footer />
-              </footer>
             </>
           }
         />
@@ -78,9 +69,6 @@ function App() {
                 <BackButton />
                 <NetworkLayer />
               </main>
-              <footer>
-                <Footer />
-              </footer>
             </>
           }
         />
@@ -92,9 +80,6 @@ function App() {
               <main>
                 <Frontend />
               </main>
-              <footer>
-                <Footer />
-              </footer>
             </>
           }
         />
