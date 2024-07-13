@@ -15,13 +15,13 @@ export const SkillsBar = ({ skillName, percentage }) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           skillLevelElement.style.width = percentage;
-          observer.disconnect(); // Stop observing once the animation is triggered
+          observer.disconnect();
         }
       });
     };
 
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.1, // Trigger when at least 10% of the element is visible
+      threshold: 0.1,
     });
 
     observer.observe(skillLevelElement);
@@ -33,7 +33,9 @@ export const SkillsBar = ({ skillName, percentage }) => {
   return (
     <section className="">
       <div className="skill">
-        <div className="min-[320px]:w-2/6 min-[320px]:text-sm skill-name">{skillName}</div>
+        <div className="min-[320px]:w-2/6 min-[320px]:text-sm skill-name">
+          {skillName}
+        </div>
         <div className="min-[320px]:w-3/6 skill-bar">
           <div className="skill-level" ref={skillBar}></div>
         </div>

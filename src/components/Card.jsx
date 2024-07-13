@@ -16,6 +16,7 @@ import { useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { SkillsBar } from "../utils/DOMFunc";
+import LandingPage from "./landingpage";
 
 const NewSkillsBar = [
   { name: "Javascript", percentage: "70%" },

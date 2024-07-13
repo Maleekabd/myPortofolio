@@ -13,7 +13,6 @@ import ComputerNetwork from "./components/ComputerNetwork";
 import ApaItuJaringanKomputer from "./contents/computer-network/ApaItuJaringanKomputer";
 import NetworkLayer from "./contents/computer-network/osi-layer-tcp-ip";
 import BackButton from "./elements/BackButton";
-import Softskills from "./components/Softskills";
 
 function App() {
   return (
