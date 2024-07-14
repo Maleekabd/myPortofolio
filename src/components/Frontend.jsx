@@ -41,10 +41,10 @@ const FrontendProjects = [
   },
   {
     id: 7,
-    title: "Vegetable Box : Get Fresh Vegetable from local farmer",
+    title: "Grocery Shop",
     image: VegetableBox,
-    Path: "",
-    name: ["NextJS", "Redux", "Firebase", "Cloudinary", "TailwindCSS"],
+    Path: "https://grocerybymalik.vercel.app",
+    name: ["ReactJS", "TailwindCSS"],
   },
   {
     id: 8,
