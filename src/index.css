@@ -3,12 +3,11 @@
 @tailwind utilities;
 
 body {
+  background-color: white;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
   font-family: "syne", "Poppins", "Franklin Gothic Medium", "Arial Narrow",
     Arial, sans-serif;
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity)) /* #d1d5db */;
 }

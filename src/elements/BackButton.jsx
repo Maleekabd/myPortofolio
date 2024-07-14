@@ -3,7 +3,7 @@ import { FaArrowLeft } from "react-icons/fa";
 
 const BackButton = () => {
   return (
-    <div className="p-5">
+    <div className="bg-white p-5">
       <NavLink
         to={"/"}
         className=" flex items-center gap-3 flex-wrap hover:underline hover:text-violet-400"

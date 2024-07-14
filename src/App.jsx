@@ -13,6 +13,7 @@ import ComputerNetwork from "./components/ComputerNetwork";
 import ApaItuJaringanKomputer from "./contents/computer-network/ApaItuJaringanKomputer";
 import NetworkLayer from "./contents/computer-network/osi-layer-tcp-ip";
 import BackButton from "./elements/BackButton";
+import ComingSoon from "./components/HTTPStatus/ComingSoon";
 
 function App() {
   return (
@@ -43,9 +44,10 @@ function App() {
           path="computer-network-projects"
           element={
             <>
-              <main>
+              <ComingSoon />
+              {/* <main>
                 <ComputerNetwork />
-              </main>
+              </main> */}
             </>
           }
         />
@@ -77,6 +79,14 @@ function App() {
           element={
             <>
               <Frontend />
+            </>
+          }
+        />
+        <Route
+          path="/quantum-software-engineer-projects"
+          element={
+            <>
+              <ComingSoon />
             </>
           }
         />
