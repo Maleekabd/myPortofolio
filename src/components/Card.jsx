@@ -31,10 +31,8 @@ const NewSkillsBar = [
   { name: "Cisco", percentage: "70%" },
   { name: "Mikrotik", percentage: "60%" },
   { name: "Linux", percentage: "50%" },
-  { name: "GNU Radio", percentage: "50%" },
   { name: "Qiskit", percentage: "50%" },
   { name: "Cryptography", percentage: "80%" },
-  { name: "NS3", percentage: "40%" },
   { name: "C#", percentage: "40%" },
   { name: "Cybersecurity NetDef", percentage: "50%" },
 ];
