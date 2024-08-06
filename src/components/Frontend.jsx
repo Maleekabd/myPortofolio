@@ -91,6 +91,7 @@ const Frontend = () => {
           >
             <Link to={`${skill.Path}`} target="_blank">
               <img
+              loading="lazy"
                 src={skill.image}
                 alt={skill.title}
                 className="object-cover object-center w-full h-60 dark:bg-gray-500"
