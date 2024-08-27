@@ -5,18 +5,18 @@ import Tailwind from "../assets/skill/tailwind-Photoroom.svg";
 import React from "../assets/skill/react_logo_2-Photoroom.svg";
 import Html from "../assets/skill/html-rm-bg.svg";
 import MongoDB from "../assets/skill/MongoDB.svg";
-import NodeJs from "../assets/skill/Nodejs.svg";
+import NodeJS from "../assets/skill/Nodejs.svg";
 import Linux from "../assets/skill/linux.svg";
-import SnortTM from "../assets/skill/SnortTM.png";
-import Suricata from "../assets/skill/suricata.png";
-import Splunk from "../assets/skill/splunk.png";
-import WireShark from "../assets/skill/wireshark.png";
-import Qiskit from "../assets/skill/qiskit.png";
-import Mikrotik from "../assets/skill/MikroTik-logo.png";
+// import SnortTM from "../assets/skill/SnortTM.png";
+// import Suricata from "../assets/skill/suricata.png";
+// import Splunk from "../assets/skill/splunk.png";
+// import WireShark from "../assets/skill/wireshark.png";
+// import Qiskit from "../assets/skill/qiskit.png";
+// import Mikrotik from "../assets/skill/MikroTik-logo.png";
 import Cisco from "../assets/skill/cisco.svg";
 import Python from "../assets/skill/python.svg";
-import Netmiko from "../assets/skill/netmiko.svg";
-import GNURadio from "../assets/skill/gnu.png";
+// import Netmiko from "../assets/skill/netmiko.svg";
+// import GNURadio from "../assets/skill/gnu.png";
 import Redux from "../assets/skill/redux-logo.svg";
 
 const Stats = () => {
@@ -27,7 +27,7 @@ const Stats = () => {
     React,
     Html,
     MongoDB,
-    NodeJs,
+    NodeJS,
     Linux,
     // SnortTM,
     // Suricata,
@@ -45,7 +45,7 @@ const Stats = () => {
   return (
     <section id="skills" className="h-auto dark:bg-gray-100 dark:text-gray-800">
       <div className="space-y-6 text-center lg:space-y-8 ">
-        <h1 className=" min-[320px]:text-4xl min-[320px]:font-bold min-[320px]:p-2 md:text-[8em] lg:text-8xl lg:font-normal italic">
+        <h1 className=" min-[320px]:text-4xl min-[320px]:font-bold min-[320px]:p-2 md:text-[8em] lg:text-8xl lg:font-normal">
           Skills
         </h1>
         <p className="min-[320px]:text-lg min-[320px]:px-5 text-center md:text-6xl lg:text-6xl">

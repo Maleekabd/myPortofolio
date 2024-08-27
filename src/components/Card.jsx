@@ -4,10 +4,7 @@ import "aos/dist/aos.css";
 import quantum from "../assets/skill/quantum.jpg";
 import reactjs from "../assets/skill/reactjs.jpg";
 import computernetwork from "../assets/skill/computernetwork.jpg";
-import { Link } from "react-router-dom";
 import Stats from "./stats";
-import Contact from "./Contact";
-import Footer from "./Footer";
 import {
   MdKeyboardDoubleArrowLeft,
   MdKeyboardDoubleArrowRight,
@@ -16,7 +13,6 @@ import { useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { SkillsBar } from "../utils/DOMFunc";
-import LandingPage from "./landingpage";
 
 const NewSkillsBar = [
   { name: "Javascript", percentage: "70%" },
@@ -25,6 +21,7 @@ const NewSkillsBar = [
   { name: "ReactJS", percentage: "75%" },
   { name: "TailwindCSS", percentage: "70%" },
   { name: "MongoDB", percentage: "45%" },
+  { name: "MySQL", percentage: "60%" },
   { name: "ExpressJS", percentage: "50%" },
   { name: "Python", percentage: "60%" },
   { name: "Redux", percentage: "50%" },
@@ -33,8 +30,8 @@ const NewSkillsBar = [
   { name: "Linux", percentage: "50%" },
   { name: "Qiskit", percentage: "50%" },
   { name: "Cryptography", percentage: "80%" },
-  { name: "C#", percentage: "40%" },
-  { name: "Cybersecurity NetDef", percentage: "50%" },
+  // { name: "C#", percentage: "40%" },
+  // { name: "Cybersecurity NetDef", percentage: "50%" },
 ];
 
 const skills = [
@@ -77,10 +74,9 @@ const Card = () => {
   });
   return (
     <>
-      <Stats />
       <div className="bg-yellow-300 min-[320px]:pt-5 sm:p-6 md:p-10 lg:p-10 flex flex-col items-center justify-around h-auto">
-        <h1 className="min-[320px]:text-2xl min-[320px]:font-bold md:text-8xl md:font-normal lg:text-8xl lg:font-normal italic">
-          Skills Status
+        <h1 className="min-[320px]:text-2xl min-[320px]:font-bold md:text-8xl md:font-normal lg:text-8xl lg:font-normal">
+          Status
         </h1>
         <div className="min-[320px]:py-3 min-[320px]:px-2 sm:py-3 md:py-6 lg:py-6 w-full flex min-[320px]:flex-col sm:flex-col md:flex-row lg:flex-row sm:items-stretch md:items-stretch lg:items-stretch lg:justify-between">
           <div className=" w-full h-auto p-5">
@@ -93,18 +89,8 @@ const Card = () => {
           <div className="flex flex-col justify-between h-full w-full">
             <div className="container mx-2 py-4">
               <div>
-                <div className="softskills relative col-span-12 px-2 space-y-6 sm:col-span-9">
+                <div className="relative col-span-12 px-2 space-y-6 sm:col-span-9">
                   <div className="col-span-12 space-y-12 relative  sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300">
-                    <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
-                      <h3 className="text-xl font-semibold tracking-wide">
-                        Perfectionist
-                      </h3>
-                      <p className="min-[320px]:p-1 sm:p-2 md:p-2 lg:p-2">
-                        Being a perfectionist in terms of soft skills means
-                        striving for excellence and paying attention to details
-                        to ensure the highest quality of work.{" "}
-                      </p>
-                    </div>
                     <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
                       <h3 className="text-xl font-semibold tracking-wide">
                         Communication Skills

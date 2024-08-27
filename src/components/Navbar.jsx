@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <>
       {/* md large screen */}
-      <div className="z-20 min-[320px]:hidden sm:hidden md:block lg:flex lg:items-center lg:justify-between fixed top-0 h-16 w-full ">
+      <div className="z-20 min-[320px]:hidden sm:hidden md:block lg:flex lg:items-center lg:justify-between h-16 w-full bg-yellow-400 sticky top-0">
         <div className="ml-16 m-2 p-2">
           <img className="w-24" src={LOGO} alt="" />
         </div>

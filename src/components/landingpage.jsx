@@ -7,9 +7,8 @@ const LandingPage = () => {
       <Navbar />
       <section
         id="landing-page"
-        className="bg-yellow-300 min-[320px]:justify-evenly min-[320px]:flex-col flex  lg:flex-row md:h-auto lg:h-screen   lg:justify-between relative overflow-hidden"
+        className="bg-yellow-300 min-[320px]:justify-evenly min-[320px]:flex-col flex  lg:flex-row md:h-auto lg:h-screen   lg:justify-between relative h-auto overflow-hidden"
       >
-        <span className="z-1 absolute bg-gradient-to-tr from-gray-300 to-white -right-64 -top-80 lg:h-[60em] xl:h-[70em] rounded-[400px] lg:w-[60em] xl:w-[60em]"></span>
         <div className="w-full flex md:justify-between md:items-center lg:flex-row md:flex-col-reverse lg:justify-evenly lg:items-center">
           {/* <video
             className="min-[320px]:hidden md:block lg:block -z-10 absolute top-0 left-0 w-full h-full object-cover opacity-15"
@@ -34,7 +33,7 @@ const LandingPage = () => {
             </p>
           </div>
           <figure
-            className="min-[320px]:hidden sm:hidden md:block lg:block z-10 flex 
+            className="min-[320px]:hidden sm:hidden md:block lg:block flex 
            md:h-3/6 lg:h-full lg:w-full md:m-10 md:pb-0 md:p-20  md:items-center md:justify-center  lg:items-center lg:justify-center"
           >
             <img

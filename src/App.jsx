@@ -14,6 +14,7 @@ import ApaItuJaringanKomputer from "./contents/computer-network/ApaItuJaringanKo
 import NetworkLayer from "./contents/computer-network/osi-layer-tcp-ip";
 import BackButton from "./elements/BackButton";
 import ComingSoon from "./components/HTTPStatus/ComingSoon";
+import Stats from "./components/stats";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Landingpage />
               {/* <Softskills /> */}
               {/* <Timeline /> */}
+              <Stats />
               <Card />
               {/* <Contact /> */}
               <Footer />
