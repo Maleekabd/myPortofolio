@@ -23,7 +23,7 @@ const LandingPage = () => {
             <span className="sm:hidden md:hidden lg:hidden absolute -z-10 -bottom-5 -left-10 w-32 rounded-[100%] bg-teal-200 h-32"></span> */}
             {/* <h3 className="min-[320px]:text-xl">hi. i am Malik Abdurrasyid</h3> */}
             <h1 className=" min-[320px]:text-[55px] min-[320px]:font-bold lg:font-normal md:text-[6em] lg:text-[6em]">
-              Frontend Web Developer
+              Software Developer
             </h1>
             <p className="min-[320px]:block lg:block">
               Hello! I am Malik Abdurrasyid, a graduate in Electrical
