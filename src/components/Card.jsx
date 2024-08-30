@@ -74,7 +74,7 @@ const Card = () => {
   });
   return (
     <>
-      <div className="bg-yellow-300 min-[320px]:pt-5 sm:p-6 md:p-10 lg:p-10 flex flex-col items-center justify-around h-auto">
+      <div className="min-[320px]:pt-5 sm:p-6 md:p-10 lg:p-10 flex flex-col items-center justify-around h-auto">
         <h1 className="min-[320px]:text-2xl min-[320px]:font-bold md:text-8xl md:font-normal lg:text-8xl lg:font-normal">
           Status
         </h1>
@@ -154,7 +154,7 @@ const Card = () => {
           </div>
         </div>
       </div>
-      <section id="projects" className=" bg-yellow-300 h-auto">
+      <section id="projects" className=" h-auto">
         <div className="flex flex-col">
           <span
             data-aos="fade-right"
@@ -163,7 +163,7 @@ const Card = () => {
             Projects{" "}
             <MdKeyboardDoubleArrowLeft className="animation-to-left text-black" />
           </span>
-          <span className="min-[320px]:text-[4em] min-[320px]:pl-0 lg:pl-5 leading-5 text-center md:text-[13em] lg:text-[13em] text-black italic">
+          <span className="z-10 min-[320px]:text-[4em] min-[320px]:pl-0 lg:pl-5 leading-5 text-center md:text-[13em] lg:text-[13em] text-black italic">
             Projects
           </span>
           <span

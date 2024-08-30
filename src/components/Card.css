@@ -11,10 +11,11 @@
   background-size: cover;
 }
 
-#skills {
+/* #skills {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity)) /* #fde047 */;
-}
+/* }  */
+
 .softskills h3 {
   position: relative;
   display: inline-block;

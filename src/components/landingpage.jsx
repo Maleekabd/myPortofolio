@@ -7,7 +7,7 @@ const LandingPage = () => {
       <Navbar />
       <section
         id="landing-page"
-        className="bg-yellow-300 min-[320px]:justify-evenly min-[320px]:flex-col flex  lg:flex-row md:h-auto lg:h-screen   lg:justify-between relative h-auto overflow-hidden"
+        className=" min-[320px]:justify-evenly min-[320px]:flex-col flex  lg:flex-row md:h-auto lg:h-screen   lg:justify-between relative h-auto overflow-hidden"
       >
         <div className="w-full flex md:justify-between md:items-center lg:flex-row md:flex-col-reverse lg:justify-evenly lg:items-center">
           {/* <video
@@ -18,18 +18,21 @@ const LandingPage = () => {
           >
             <source src={DB} />
           </video> */}
-          <div className="relative min-[320px]:flex min-[320px]:justify-evenly min-[320px]:flex-col p-8 min-[320px]:h-screen md-w-3/6 lg:w-full md:block lg:block lg:h-auto">
+          <div className="relative min-[320px]:flex min-[320px]:justify-evenly min-[320px]:flex-col p-8 min-[320px]:h-screen md-w-3/6 lg:w-full md:block lg:block lg:h-auto space-y-10">
             {/* <span className="sm:hidden md:hidden lg:hidden absolute -top-5 -right-10 w-32 rounded-[100%] bg-teal-200 h-32"></span>
             <span className="sm:hidden md:hidden lg:hidden absolute -z-10 -bottom-5 -left-10 w-32 rounded-[100%] bg-teal-200 h-32"></span> */}
             {/* <h3 className="min-[320px]:text-xl">hi. i am Malik Abdurrasyid</h3> */}
-            <h1 className=" min-[320px]:text-[55px] min-[320px]:font-bold lg:font-normal md:text-[6em] lg:text-[6em]">
+            <h1 className=" min-[320px]:text-[55px] min-[320px]:font-bold lg:font-normal md:text-[6em] lg:text-[6em] leading-[5rem]">
               Software Developer
             </h1>
-            <p className="min-[320px]:block lg:block">
+            <p className="min-[320px]:block lg:block text-lg">
               Hello! I am Malik Abdurrasyid, a graduate in Electrical
               Engineering - majoring in multimedia Telecommunication with a
-              special interest in Cybersecurity, Computer Network, Quantum
-              Software Development, and Frontend Web using React
+              special interest in {" "} 
+              <span className="text-rose-600">
+              Software Development, Cybersecurity, Computer Network, and Quantum
+              Software Development. 
+              </span>
             </p>
           </div>
           <figure
@@ -38,7 +41,7 @@ const LandingPage = () => {
           >
             <img
               loading="lazy"
-              className="min-[320px]:hidden sm:hidden md:block md:h-64 lg:block lg:h-[30em] rounded-full bg-gradient-to-br from bg-gray-900 to-black "
+              className="min-[320px]:hidden sm:hidden md:block md:h-64 lg:block lg:h-[25em] rounded-full bg-gradient-to-br from bg-gray-900 to-black "
               src={NoBg}
               alt=""
             />
