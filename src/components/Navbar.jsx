@@ -44,25 +44,30 @@ const Navbar = () => {
   return (
     <>
       {/* md large screen */}
-      <div className="z-20 min-[320px]:hidden sm:hidden md:block lg:flex lg:items-center lg:justify-between h-16 w-full bg-yellow-400 sticky top-0">
+      <div className="z-20 min-[320px]:hidden sm:hidden md:block lg:flex lg:items-center lg:justify-between h-16 w-full sticky top-0">
         <div className="ml-16 m-2 p-2">
           <img className="w-24" src={LOGO} alt="" />
         </div>
         <ul className="flex justify-between cursor-pointer m-2 mr-16 p-2 gap-16">
-          <li className="nav">
+          <li className="nav relative group">
             <button onClick={scrollToLandingPage}>Home</button>
+            <span className="absolute left-0 bottom-0 w-full h-[2px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
           </li>
-          <li className="nav">
+          <li className="nav relative group">
             <button onClick={scrollToTarget}>Timeline</button>
+            <span className="absolute left-0 bottom-0 w-full h-[2px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
           </li>
-          <li className="nav">
+          <li className="nav relative group">
             <button onClick={scrollToMySkills}>Skills</button>
+            <span className="absolute left-0 bottom-0 w-full h-[2px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
           </li>
-          <li className="nav">
+          <li className="nav relative group">
             <button onClick={scrollToMyProjects}>Projects</button>
+            <span className="absolute left-0 bottom-0 w-full h-[2px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
           </li>
-          <li className="nav">
+          <li className="nav relative group">
             <button onClick={scrollToMyContact}>Contact</button>
+            <span className="absolute left-0 bottom-0 w-full h-[2px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
           </li>
         </ul>
       </div>

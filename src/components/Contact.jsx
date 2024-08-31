@@ -5,14 +5,26 @@ const Contact = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setIsLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true);
+    // if (
+    //   fullName.length == 0 ||
+    //   email.length == 0 ||
+    //   message == 0 ||
+    //   fullName.length < 3 ||
+    //   email.length < 4 ||
+    //   message < 2
+    // ) {
+    //   alert("Nama, Email dan Pesan tidak boleh kosong");
+    // }
 
-    emailjs.init("18SaNWqnN-lCI4bgq");
+    emailjs.init("E5GOTx9IEyAJfBFnl");
 
     emailjs
-      .send("service_1c1vd3s", "template_g3p83sp", {
+      .send("service_21xpodn", "template_g3p83sp", {
         from_name: fullName,
         message: message,
         email: email,
@@ -27,7 +39,10 @@ const Contact = () => {
         (error) => {
           alert("Message failed to send!");
         }
-      );
+      )
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -85,9 +100,10 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="border border-black w-full p-3 text-sm font-bold tracki uppercase rounded dark:bg-violet-400 dark:text-gray-900"
+            disabled={loading}
+            className="bg-emerald-400 w-full p-3 text-sm font-bold tracki uppercase rounded dark:bg-violet-400 dark:text-gray-900"
           >
-            Send Message
+            {loading ? "Loading..." : "Send Message"}
           </button>
         </form>
       </div>
