@@ -183,23 +183,23 @@ const Card = () => {
             </h2>
           </div>
           <div className="parent-skills min-[320px]:w-full md:w-3/6 lg:w-3/6  md:m-5 lg:m-5 md:p-5 lg:p-5">
-            <a data-aos="fade-left" href="/frontend-react-projects">
-              <div className="skew-x-12 bg-image-fe bg-lime-400 p-4">
-                <h1 className="min-[320px]:text-lg md:text-6xl lg:text-6xl">
+            <a data-aos="fade-up" href="/frontend-react-projects">
+              <div className="bg-image-fe bg-lime-400 p-2">
+                <h1 className="min-[320px]:text-lg md:text-6xl lg:text-4xl">
                   Frontend Web Engineer
                 </h1>
               </div>
             </a>
-            <a data-aos="fade-left" href="/quantum-software-engineer-projects">
-              <div className="skew-x-12 bg-image-qsf bg-lime-400 mt-2 p-4">
-                <h1 className="min-[320px]:text-lg md:text-6xl lg:text-6xl">
+            <a data-aos="fade-up" href="/quantum-software-engineer-projects">
+              <div className="bg-image-qsf bg-lime-400 p-2">
+                <h1 className="min-[320px]:text-lg md:text-6xl lg:text-4xl">
                   Quantum Software Engineer
                 </h1>
               </div>
             </a>
-            <a data-aos="fade-left" href="/computer-network-projects">
-              <div className="skew-x-12 bg-image-ne bg-lime-400 mt-2 p-4">
-                <h1 className="min-[320px]:text-lg md:text-6xl lg:text-6xl">
+            <a data-aos="fade-up" href="/computer-network-projects">
+              <div className="bg-image-ne bg-lime-400 p-2">
+                <h1 className="min-[320px]:text-lg md:text-6xl lg:text-4xl">
                   Network Engineering
                 </h1>
               </div>
