@@ -1,19 +1,46 @@
-.parent-skills h1 {
+.parent-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.parent-skills > a {
+  flex: 1; /* Semua item akan memiliki ukuran dasar yang sama */
+  background-color: #f0f0f0;
+  text-align: center;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: black;
+  transition: flex 0.2s ease; /* Transisi pelebaran */
+}
+
+.parent-skills > a:hover {
+  flex: 3;
+  transition: flex 0.2s ease; /* Transisi pelebaran */
+}
+
+.parent-skills > a div > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   color: white;
-  font-style: italic;
+  text-align: center;
 }
 
 .bg-image-fe,
 .bg-image-qsf,
 .bg-image-ne {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100%;
+  background-size: cover; /* Gambar menutupi div dengan proporsi yang sesuai */
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Gambar tidak akan diulang */
+  transition: background-size 0.3s ease;
 }
 
 /* #skills {
   --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity)) /* #fde047 */;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity)) /* #fde047 */
 /* }  */
 
 .softskills h3 {
